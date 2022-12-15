@@ -36,6 +36,7 @@ Anicana Technical Documents
 
    /game-development/overview
    /game-development/test-environment
+   /game-development/main-environment
    /game-development/user-registration
    /game-development/wallet-connection
    /game-development/call-arcana-generator
@@ -51,7 +52,8 @@ Anicana Technical Documents
    /egg-management/matrix-development
    /egg-management/generate-eggs
    /egg-management/stored-eggs
-
+   /egg-management/IPFS-upload
+   /egg-management/anima
 
 
 .. toctree::

@@ -24,6 +24,9 @@ Matrix構築手順
 * Arcana Shardを入手する。
 * Matrixコントラクトをデプロイ
 * MatirxコントラクトにArcana Shardを転送
+* Matirxコントラクトにegg生成1回辺りのpriceを設定
+* Matirxコントラクトにmetadataのcontent hashを設定（ `IPFSへのアップロード <../egg-management/IPFS-upload.html>`_ を参照）
+* MatirxコントラクトにSquareKey IDを設定
 * MatrixMasterコントラクトにMatrixコントラクトを登録(ブロードキャスト)
 * MatrixMasterにより付与されたMatrixIdをValidator管理者に知らせる
 
@@ -32,7 +35,7 @@ Matrix構築手順
 Matrixの規格
 ==========================
 
-Matrixの規格は `こちら <./contract-info/interfaces.html>`_ を参照。
+Matrixの規格は `こちら <../contract-info/interfaces.html>`_ を参照。
 
 --------------------------------
 

@@ -24,16 +24,17 @@
 
 署名対象データを作成するには、下記のデータが必要。
 
-* toAddr : アルカナ生成先のアドレス（EGGの開封許諾を与える相手）
 * eggid : 対象のEgg トークンのID
+* toAddr : アルカナ生成先のアドレス（EGGの開封許諾を与える相手）
 * seed : ゲームの結果値 
+* contract : Incubatorのコントラクトアドレス
+* privateKey : eggidオーナのprivate key
 
 上記データを元に、以下の手順で署名対象データ:dataToBeSigned を作成する。::
 
-    const ethabi = require('ethereumjs-abi');
+    const genSig = require("./genSig.js");
 
-    const dataToBeSigned = ethabi.soliditySHA3(["uint256", "address", "uint256"],
-                                               [eggId, toAddr, seed]);
+    const dataToBeSigned = genSig.forIncubate(eggid,toAddr,seed,contract,privateKey);
 
 ------------------------------------------------------------------------------------
 

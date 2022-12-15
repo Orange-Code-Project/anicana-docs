@@ -31,11 +31,16 @@ API仕様
 
 テストネットエンドポイント::
 
-    https://anikana-portal-dev-front.loftal.jp
+    https://staging.anicana.org/
+
+本番環境エンドポイント::
+
+    https://anicana.org/
+
 
 生成スクリプトサンプル::
 
-    <script src="https://anikana-portal-dev-front.loftal.jp/login.js" id="anikana_login_script" data-call-id="9999999" data-sign-text="HELLO"  data-callback="https://anikana-portal-dev-front.loftal.jp/test_login.html" ></script>
+    <script src="https://staging.anicana.org/login.js" id="anikana_login_script" data-call-id="9999999" data-sign-text="HELLO"  data-callback="https://staging.anicana.org/test_login.html" ></script>
     <div style='text-align: center'><button class='' onclick='__open_portal_login()'>Login</button></div>
 
 

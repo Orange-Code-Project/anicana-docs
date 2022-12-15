@@ -17,11 +17,15 @@ API仕様
 
 テストネットエンドポイント::
 
-    https://anikana-portal-dev-front.loftal.jp
+    https://staging.anicana.org/
+
+本番環境エンドポイント::
+
+    https://anicana.org/
 
 生成スクリプトサンプル::
 
-    <script src="https://anikana-portal-dev-front.loftal.jp/arcana.js" id="gen_arcana_script" data-requestid="9999999" data-toaddr="0xFf5BC900110f5c4eb6Ce2faf2081B4151655B3f3" data-seed="10000" data-eggid="10" data-signature="0xdfe893d3906b31c0cfcc05b05387c7cf3bf31524caeac2fb5e3d7b9d144dbc9550a9ce41d92ad4c070c6f34c38ba8329d8d1b32818f2d01a637758f61b012a211c" data-callback="https://anikana-portal-dev-front.loftal.jp/test_button.html" ></script> 
+    <script src="https://staging.anicana.org/arcana.js" id="gen_arcana_script" data-requestid="9999999" data-toaddr="0xFf5BC900110f5c4eb6Ce2faf2081B4151655B3f3" data-seed="10000" data-eggid="10" data-signature="0xdfe893d3906b31c0cfcc05b05387c7cf3bf31524caeac2fb5e3d7b9d144dbc9550a9ce41d92ad4c070c6f34c38ba8329d8d1b32818f2d01a637758f61b012a211c" data-callback="https://staging.anicana.org/test_button.html" ></script> 
     <div style='text-align: center'><button onclick="__go_to_arcana_generator()">アルカナ生成</button></div>
 
 

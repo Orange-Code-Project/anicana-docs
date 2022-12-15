@@ -23,10 +23,10 @@
 
     "手順", "詳細"
     "Validatorのセットアップ", ":doc:`Validatorセットアップ </validator/procedure>` を参照。"
-    "Square Keyの生成", ":doc:`Square Keyの生成 </validator/procedure>` を参照。"
+    "Square Keyの生成", ":doc:`Square Keyの生成 </validator/create-square-key>` を参照。"
     "Matrixの開発依頼", ":doc:`Matrixの開発を依頼する </egg-management/matrix-development>` を参照。"
-    "Animaの入手", ":doc:`ANM(Anima)を入手する </egg-management/matrix-development>` を参照。"
-    "Eggの生成", ":doc:`EGG生成する </egg-management/matrix-development>` を参照。"
+    "Animaの入手", ":doc:`ANM(Anima)を入手する </egg-management/anima>` を参照。"
+    "Eggの生成", ":doc:`EGG生成する </egg-management/generate-eggs>` を参照。"
 
 
 ゲーム開発において行うことができるのは以下の2つ。

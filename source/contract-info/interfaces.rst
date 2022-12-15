@@ -7,12 +7,8 @@ MATRIX規格
 
 以下のインタフェースを持つコントラクトは、MatrixとしてMatrixMasterに登録できる。::
 
-    /** @notice Eggを生成する
-     * @param metadataHash 生成するeggに与えるメタデータのハッシュ
-     * @param to Eggの生成先
-     * @return 生成したEggのID
-     */
-    function spawn(string calldata metadataHash, address to) external returns (uint256);
+    // MatrixMasterに対して、Eggの材料を提示する。
+    function spawnCondition() external returns(IEggBuilder.ComposeCondition memory);
 
     // Eggの生成に必要とするAnimaの量を返す。生成に連動して、支払われたAnimaが開発者に付与される。
     function getPrice() external view returns (uint256);
@@ -20,6 +16,8 @@ MATRIX規格
     // Matrix使用者はここで返されるIDのスクエアキーを持つユーザに限られる。
     function correspondingSquareKey() external view returns (uint256);
 
+    // オーナーを確認する。
+    function getOwner() external view returns (address);
 
 -------------------------------
 

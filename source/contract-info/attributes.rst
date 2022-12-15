@@ -30,23 +30,17 @@ Arcana生成時に以下の確率で抽選が行われる。
 =====================
 
 エレメントは以下のタイプから当確率で抽選される。
-【タイプ仕様未確定】
 
 .. csv-table::
     :header-rows: 1
     :align: center
 
     "内部表現", "エレメント名"
-    "0", "BLUE FIRE"
-    "1", "BLUE FIRE"
-    "2", "BLUE FIRE"
-    "3", "BLUE FIRE"
-    "4", "BLUE FIRE"
-    "5", "BLUE FIRE"
-    "6", "BLUE FIRE"
-    "7", "BLUE FIRE"
-    "8", "BLUE FIRE"
-    "9", "BLUE FIRE"
-
-
+    "0", "木 　Eternal Tree - 常磐なる樹　（ときわなるき）"
+    "1", "火 　Crimson Flame - 紅蓮の焔　（ぐれんのほむら）"
+    "2", "土 　Adamantine Rock - 堅牢な岩　（けんろうないわ）"
+    "3", "金 　Peerless Steel - 無双の鋼　（むそうのはがね）"
+    "4", "水 　Heavenly Dew - 天の雫　（あまのしずく）"
+    "5", "光 　Golden Light - 黄金の光　（こがねのひかり）"
+    "6", "闇 　Unfathomable Abyss - 底知れぬ深淵　（そこしらぬしんえん）"
 
