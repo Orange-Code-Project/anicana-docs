@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ナイツ・オブ・ラウンドテーブル &mdash; Anicana Technical Documents  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="ゲーム開発概要" href="../game-development/overview.html" />
+    <link rel="prev" title="Square Keyを生成する" href="create-square-key.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Anicana Technical Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/what-is-anicana-chain.html">Anicana Chainとは?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/system-requirement.html">システム要件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/consensus-algorithm.html">コンセンサスアルゴリズム</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/how-to-join.html">アニカナへの参加の仕方</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validatorセットアップ:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="procedure.html">Validator構築手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system-structure.html">システム構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wallet-registration.html">アニカナウォレットに登録する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aws-preparation.html">AWSアカウントの準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validator-setup.html">Validatorセットアップ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validator-application.html">Validator候補にアプライする</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create-square-key.html">Square Keyを生成する</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ナイツ・オブ・ラウンドテーブル</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#validator">Validatorに対する参加承認を行う許可型ノード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#validaotr">Validaotr(候補)ノードの開放</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">ゲームの開発:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/overview.html">ゲーム開発概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/test-environment.html">テスト環境環境情報</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/user-registration.html">ユーザウォレットの取得</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/wallet-connection.html">ウォレットの接続</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/call-arcana-generator.html">アルカナ生成手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/generate-arcana.html">ARCANA生成API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/egg-balance.html">保有EGGの一覧取得</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game-development/generate-signature.html">署名生成手順</a></li>
+</ul>
+<p class="caption"><span class="caption-text">運用:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/matrix-development.html">Matrixの開発を依頼する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/generate-eggs.html">EGGを生成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/stored-eggs.html">EGGの在庫を確認</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contracts:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/interfaces.html">インタフェース仕様</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/calculate-genes.html">遺伝子計算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/decomposition.html">Arcanaの分解</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/attributes.html">ARCANAの属性値計算</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anicana Technical Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>ナイツ・オブ・ラウンドテーブル</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/validator/knights-of-the-round-table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>ナイツ・オブ・ラウンドテーブル<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="validator">
+<h2>Validatorに対する参加承認を行う許可型ノード<a class="headerlink" href="#validator" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Knights of the Round Table (ナイツ・オブ・ラウンドテーブル)とは、アニカナネットワーク
+に参加したいValidatorに対して、参加承認を与える権限を持つ許可型ノードのグループ。</p>
+<p>Validatorは、必ずKnights 1名のネットワーク参加承認を受けなくてはならない。(※ Initial Validatorを除く)</p>
+<hr class="docutils" />
+<p>各Validatorは以下のいずれかの役職・属性を持つ。各役職の権限や選任手順の詳細はホワイトペーパーを参照。以下に概要を示す。</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>役職</p></th>
+<th class="head"><p>上限数</p></th>
+<th class="head"><p>権限</p></th>
+<th class="head"><p>コンセンサスへの参加</p></th>
+<th class="head"><p>EGG生成の可否</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Queen</p></td>
+<td><p>1</p></td>
+<td><p>Knightの指名</p></td>
+<td><p>有り</p></td>
+<td><p>可</p></td>
+</tr>
+<tr class="row-odd"><td><p>Knight</p></td>
+<td><p>12</p></td>
+<td><p>Validatorの参加承認</p></td>
+<td><p>有り</p></td>
+<td><p>可</p></td>
+</tr>
+<tr class="row-even"><td><p>Validator(または候補)</p></td>
+<td><p>209</p></td>
+<td><p>ー</p></td>
+<td><p>無し</p></td>
+<td><p>可</p></td>
+</tr>
+<tr class="row-odd"><td><p>未承認ノード</p></td>
+<td><p>無制限</p></td>
+<td><p>ー</p></td>
+<td><p>無し</p></td>
+<td><p>不可</p></td>
+</tr>
+</tbody>
+</table>
+<p>ブロックチェーンのコンセンサスへの参加が可能なのは、QueenとKnightの13ノードのみである。
+新たなブロックの提案と承認はこれらのノードが行う。
+役職は入れ替わることがあり、その都度コンセンサスへの参加ノードも合わせて入れ替わる。</p>
+</div>
+<div class="section" id="validaotr">
+<h2>Validaotr(候補)ノードの開放<a class="headerlink" href="#validaotr" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Queen, Knight, Validatorの合計数の上限は決まっており、最大222個である。
+最大数に到達するまでに、予め設計されたスケジュールで順次開放される。</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>開放時期</p></th>
+<th class="head"><p>個数</p></th>
+<th class="head"><p>累計</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2022</p></td>
+<td><p>30</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023</p></td>
+<td><p>100</p></td>
+<td><p>130</p></td>
+</tr>
+<tr class="row-even"><td><p>2024</p></td>
+<td><p>50</p></td>
+<td><p>180</p></td>
+</tr>
+<tr class="row-odd"><td><p>2025</p></td>
+<td><p>25</p></td>
+<td><p>205</p></td>
+</tr>
+<tr class="row-even"><td><p>2026</p></td>
+<td><p>12</p></td>
+<td><p>217</p></td>
+</tr>
+<tr class="row-odd"><td><p>2027</p></td>
+<td><p>5</p></td>
+<td><p>222</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../game-development/overview.html" class="btn btn-neutral float-right" title="ゲーム開発概要" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="create-square-key.html" class="btn btn-neutral float-left" title="Square Keyを生成する" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Anicana PJ.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

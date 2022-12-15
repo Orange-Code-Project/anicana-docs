@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>テスト環境環境情報 &mdash; Anicana Technical Documents  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="ユーザウォレットの取得" href="user-registration.html" />
+    <link rel="prev" title="ゲーム開発概要" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Anicana Technical Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/what-is-anicana-chain.html">Anicana Chainとは?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/system-requirement.html">システム要件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/consensus-algorithm.html">コンセンサスアルゴリズム</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/how-to-join.html">アニカナへの参加の仕方</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validatorセットアップ:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../validator/procedure.html">Validator構築手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/system-structure.html">システム構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/wallet-registration.html">アニカナウォレットに登録する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/aws-preparation.html">AWSアカウントの準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/validator-setup.html">Validatorセットアップ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/validator-application.html">Validator候補にアプライする</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/create-square-key.html">Square Keyを生成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../validator/knights-of-the-round-table.html">ナイツ・オブ・ラウンドテーブル</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ゲームの開発:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">ゲーム開発概要</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">テスト環境環境情報</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">環境情報</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">コントラクトアドレス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abi">コントラクトABI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user-registration.html">ユーザウォレットの取得</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wallet-connection.html">ウォレットの接続</a></li>
+<li class="toctree-l1"><a class="reference internal" href="call-arcana-generator.html">アルカナ生成手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generate-arcana.html">ARCANA生成API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="egg-balance.html">保有EGGの一覧取得</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generate-signature.html">署名生成手順</a></li>
+</ul>
+<p class="caption"><span class="caption-text">運用:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/matrix-development.html">Matrixの開発を依頼する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/generate-eggs.html">EGGを生成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../egg-management/stored-eggs.html">EGGの在庫を確認</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contracts:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/interfaces.html">インタフェース仕様</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/calculate-genes.html">遺伝子計算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/decomposition.html">Arcanaの分解</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contract-info/attributes.html">ARCANAの属性値計算</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anicana Technical Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>テスト環境環境情報</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/game-development/test-environment.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>テスト環境環境情報<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>テスト環境一覧</p>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h2>環境情報<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>JSON-RPC</p></td>
+<td><p><a class="reference external" href="https://anicana-testnet.akqjt.io">https://anicana-testnet.akqjt.io</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2>コントラクトアドレス<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>コントラクト名</p></th>
+<th class="head"><p>アドレス</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Anima</p></td>
+<td><p>0x23063C702254fa67163422450a40348677C54B55</p></td>
+</tr>
+<tr class="row-odd"><td><p>Arcana</p></td>
+<td><p>0x56381B7bE2B92e6CCCcdc09006C48b801B0F4e36</p></td>
+</tr>
+<tr class="row-even"><td><p>Decoder</p></td>
+<td><p>0xce6826a966df033A222540eA69f92AdD1F471316</p></td>
+</tr>
+<tr class="row-odd"><td><p>Decomposer</p></td>
+<td><p>0x1752EDC256b62bea5319d448a27c8c76cE8be499</p></td>
+</tr>
+<tr class="row-even"><td><p>Egg</p></td>
+<td><p>0xb374640Ca3E3DA6F836ca8c60130fCAE2da3B929</p></td>
+</tr>
+<tr class="row-odd"><td><p>EggBuilder</p></td>
+<td><p>0xE76b6e8801D5341b7247e90b40715d5951AC9304</p></td>
+</tr>
+<tr class="row-even"><td><p>Incubator</p></td>
+<td><p>0xaA541cE705F7562DC5544A42Fc17f953b17e713f</p></td>
+</tr>
+<tr class="row-odd"><td><p>MatrixMaster</p></td>
+<td><p>0xA5C5B7A5581D0cA83eC865F57241881C52895766</p></td>
+</tr>
+<tr class="row-even"><td><p>Shard</p></td>
+<td><p>0xc521cb5598655E8709d6F1DcbC43307f864DeE54</p></td>
+</tr>
+<tr class="row-odd"><td><p>Square</p></td>
+<td><p>0x0dE5A47f9E2752AC597f7624AF358648bD07A35e</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="abi">
+<h2>コントラクトABI<a class="headerlink" href="#abi" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>コントラクト</p></th>
+<th class="head"><p>abi</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>EGG</p></td>
+<td><p><a class="reference download internal" download="" href="../_downloads/9892276e47a498ca62f4635d655331bd/egg.json"><code class="xref download docutils literal notranslate"><span class="pre">egg.json</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="user-registration.html" class="btn btn-neutral float-right" title="ユーザウォレットの取得" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="overview.html" class="btn btn-neutral float-left" title="ゲーム開発概要" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Anicana PJ.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
