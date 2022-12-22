@@ -79,10 +79,24 @@ Arcana分解の手順
 Arcanaの分解は以下の手順で行う。
 
 #. Decomposerに対してArcana Tokenをapproveする
+
+   　⇒使用するfunction：Arcana.approve(to, tokenId)
+
 #. 分解を開始する
+
+   　⇒使用するfunction：Decomposer.beginDecompose(tokenId)
+
 #. 分解ジョブの詳細情報を取得して完了時刻を確認
+
+   　⇒使用するfunction：Decomposer.getState(jobId)
+
 #. 分解完了を待つ
+
+　　　
+
 #. 分解を終了させ、Shardを受け取る
+
+   　⇒使用するfunction：Decomposer.endDecompose(jobId)
 
 - 参考動画
 

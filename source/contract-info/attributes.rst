@@ -42,5 +42,5 @@ Arcana生成時に以下の確率で抽選が行われる。
     "3", "金 　Peerless Steel - 無双の鋼　（むそうのはがね）"
     "4", "水 　Heavenly Dew - 天の雫　（あまのしずく）"
     "5", "光 　Golden Light - 黄金の光　（こがねのひかり）"
-    "6", "闇 　Unfathomable Abyss - 底知れぬ深淵　（そこしらぬしんえん）"
+    "6", "闇 　Unfathomable Abyss - 底知れぬ深淵　（そこしれぬしんえん）"
 

@@ -36,6 +36,21 @@
 
     const dataToBeSigned = genSig.forIncubate(eggid,toAddr,seed,contract,privateKey);
 
+-------------------------
+ライブラリ
+-------------------------
+
+.. csv-table::
+    :header-rows: 1
+    :align: center
+
+    ライブラリ, ファイル
+    genSig, :download:`genSig.js<../lib/genSig.js>`
+    genSig.cfg.json, :download:`genSig.cfg.json<../lib/genSig.cfg.json>`
+
+.. caution:: 
+   使用する環境のchainIdをgenSig.cfg.jsonに設定してください。
+
 ------------------------------------------------------------------------------------
 
 署名の作成

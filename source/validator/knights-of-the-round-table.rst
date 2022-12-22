@@ -33,7 +33,7 @@ Validatorは、必ずKnights 1名のネットワーク参加承認を受けな�
 
 
 
-Validaotr(候補)ノードの開放
+Validator(候補)ノードの開放
 =============================
 
 Queen, Knight, Validatorの合計数の上限は決まっており、最大222個である。

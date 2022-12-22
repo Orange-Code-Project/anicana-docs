@@ -16,7 +16,7 @@
     :align: center
 
     項目, 説明
-    JSON-RPC, "http://18.185.94.194:8545/"
+    JSON-RPC, "https://stgchain.anicana.org/"
 
 
 
