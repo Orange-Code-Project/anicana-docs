@@ -25,6 +25,7 @@ metadata jsonのcontent hashは `Matrix構築 <../egg-management/matrix-developm
 
     項目, 説明
     APIサーバーエンドポイント, "https://stg.anicana-api.akqjt.io/"
+    Swagger UI, "https://stg.anicana-api.akqjt.io/docs#/"
     IPFS gateway, "https://stg.anicana-api.akqjt.io/ipfs/"
 
 * 本番環境
@@ -35,5 +36,6 @@ metadata jsonのcontent hashは `Matrix構築 <../egg-management/matrix-developm
 
     項目, 説明
     APIサーバーエンドポイント, "http://chainapi.octillion.jp/"
+    Swagger UI, "https://chainapi.octillion.jp/docs#/"
     IPFS gateway, "http://ipfs.octillion.jp/"
 

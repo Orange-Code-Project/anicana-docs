@@ -25,7 +25,7 @@ API仕様
 
 生成スクリプトサンプル::
 
-    <script src="https://staging.anicana.org/arcana.js" id="gen_arcana_script" data-requestid="9999999" data-toaddr="0xFf5BC900110f5c4eb6Ce2faf2081B4151655B3f3" data-seed="10000" data-eggid="10" data-signature="0xdfe893d3906b31c0cfcc05b05387c7cf3bf31524caeac2fb5e3d7b9d144dbc9550a9ce41d92ad4c070c6f34c38ba8329d8d1b32818f2d01a637758f61b012a211c" data-callback="https://staging.anicana.org/test_button.html" ></script> 
+    <script src="https://staging.anicana.org/arcana.js" id="gen_arcana_script" data-requestid="9999999" data-toaddr="0xFf5BC900110f5c4eb6Ce2faf2081B4151655B3f3" data-seed="10000" data-eggid="10" data-signature="0xdfe893d3906b31c0cfcc05b05387c7cf3bf31524caeac2fb5e3d7b9d144dbc9550a9ce41d92ad4c070c6f34c38ba8329d8d1b32818f2d01a637758f61b012a211c" data-callback="https://staging.anicana.org/test_button.html" data-logout="true" ></script> 
     <div style='text-align: center'><button onclick="__go_to_arcana_generator()">アルカナ生成</button></div>
 
 
@@ -45,13 +45,14 @@ API仕様
     callback-url (URL), "callbackのURL。requestIdとtxHashがGETパラメータとして追加されてredirectされる。http://test.comを指定した場合、http://test.com?requestId=1&txHash=xxxxxのようになる。また、callbackは指定しなくても良い。その場合はportal上のウォレットページに遷移するボタンが表示される。"
     data-requestid (数値) uint, ゲームメーカー毎の任意の数値。 0 ~ 18446744073709551615
     data-toaddr, 配布先wallet address
+    data-logout, true/false、または無し。trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
 
 
 
 
 直接生成ページを呼び出す場合は以下のようにする。::
 
-    {endpoint}/arcana-gen/{eggId}/{seed}/{signature}/{requestId}/{toAddress}?r={callbackUrl}
+    {endpoint}/arcana-gen/{eggId}/{seed}/{signature}/{requestId}/{toAddress}?r={callbackUrl}&logout=true
 
 
 

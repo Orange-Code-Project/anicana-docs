@@ -40,7 +40,7 @@ API仕様
 
 生成スクリプトサンプル::
 
-    <script src="https://staging.anicana.org/login.js" id="anikana_login_script" data-call-id="9999999" data-sign-text="HELLO"  data-callback="https://staging.anicana.org/test_login.html" ></script>
+    <script src="https://staging.anicana.org/login.js" id="anikana_login_script" data-call-id="9999999" data-sign-text="HELLO"  data-callback="https://staging.anicana.org/test_login.html" data-logout="true" ></script>
     <div style='text-align: center'><button class='' onclick='__open_portal_login()'>Login</button></div>
 
 
@@ -55,6 +55,7 @@ API仕様
     data-call-id, ゲームメーカー毎に一意の数値
     data-sign-text, 署名対象のテキスト(ワンタイムトークン)
     data-callback, コールバックURL. ログイン完了後、callId、 sign、 address (ユーザーのwallet address) がGETパラメータに追加されてリダイレクトされます。
+    data-logout, true/false、または無し。trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
