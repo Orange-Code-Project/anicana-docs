@@ -38,7 +38,7 @@
     "手順", "詳細"
     "ゲームとウォレットの接続", ":doc:`ウォレット接続 </game-development/wallet-connection>` を参照。"
     "Arcana生成API連携", ":doc:`アルカナ生成フロー </game-development/call-arcana-generator>` を参照。"
-    
+    "LEVICA決済", ":doc:`LEVICA決済 </game-development/levica>` を参照。"
 
 
 

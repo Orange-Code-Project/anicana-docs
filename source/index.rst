@@ -14,6 +14,8 @@ Anicana Technical Documents
    /overview/system-requirement
    /overview/consensus-algorithm
    /overview/how-to-join
+   /overview/knights-of-the-round-table
+   /overview/rounds-of-logic
 
 
 .. toctree::
@@ -27,7 +29,6 @@ Anicana Technical Documents
    /validator/validator-setup
    /validator/validator-application
    /validator/create-square-key
-   /validator/knights-of-the-round-table
 
 
 .. toctree::
@@ -43,6 +44,7 @@ Anicana Technical Documents
    /game-development/generate-arcana
    /game-development/egg-balance
    /game-development/generate-signature
+   /game-development/levica
 
 
 .. toctree::
