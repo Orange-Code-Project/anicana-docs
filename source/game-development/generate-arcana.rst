@@ -4,7 +4,7 @@ ARCANA生成API
 
 
 
-次のスクリプトタグをゲームシステム側に埋め込むことで、アルカナ生成画面を呼び出すことができます。
+次のスクリプトタグをゲームシステム側に埋め込むことで、ARCANA生成画面を呼び出すことができます。
 
 
 API仕様
@@ -12,7 +12,7 @@ API仕様
 
 
 ------------------------------------
-アルカナ生成ページ呼び出しスクリプト
+ARCANA生成ページ呼び出しスクリプト
 ------------------------------------
 
 テストネットエンドポイント::
@@ -26,7 +26,7 @@ API仕様
 生成スクリプトサンプル::
 
     <script src="https://staging.anicana.org/arcana.js" id="gen_arcana_script" data-requestid="9999999" data-toaddr="0xFf5BC900110f5c4eb6Ce2faf2081B4151655B3f3" data-seed="10000" data-eggid="10" data-signature="0xdfe893d3906b31c0cfcc05b05387c7cf3bf31524caeac2fb5e3d7b9d144dbc9550a9ce41d92ad4c070c6f34c38ba8329d8d1b32818f2d01a637758f61b012a211c" data-callback="https://staging.anicana.org/test_button.html" data-logout="true" ></script> 
-    <div style='text-align: center'><button onclick="__go_to_arcana_generator()">アルカナ生成</button></div>
+    <div style='text-align: center'><button onclick="__go_to_arcana_generator()">ARCANA生成</button></div>
 
 
 
@@ -62,7 +62,7 @@ API仕様
 check status
 ------------------------------------
 
-アルカナ生成のステータスを参照する
+ARCANA生成のステータスを参照する
 
 method::
 
@@ -79,7 +79,7 @@ endpoint::
 
     パラメータ, 説明
     wallet_address, 署名者のアドレス(EGG保有者のアドレス)
-    request_id, アルカナ生成API呼び出し時に指定したリクエストID
+    request_id, ARCANA生成API呼び出し時に指定したリクエストID
 
 
 Sample response
@@ -101,10 +101,10 @@ statusの値
     :align: center
 
     ステータス, 説明
-    no_transaction, ユーザはまだアルカナ生成手順を完了していない。(離脱した場合も含む)
-    transaction_created, アルカナ生成トランザクションをブロックチェーンに送信済みだが、結果未確定
-    error, トランザクションがなんらかの原因で失敗して終了(アルカナは生成されていない)
-    done, アルカナが生成されて正常終了
+    no_transaction, ユーザはまだARCANA生成手順を完了していない。(離脱した場合も含む)
+    transaction_created, ARCANA生成トランザクションをブロックチェーンに送信済みだが、結果未確定
+    error, トランザクションがなんらかの原因で失敗して終了(ARCANAは生成されていない)
+    done, ARCANAが生成されて正常終了
 
 
 Error response

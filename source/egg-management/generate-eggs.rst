@@ -15,7 +15,7 @@ Validator管理画面内のEGGページで、EGGを生成することができ�
 #. MatrixIdの入力 (IDは開発エンジニアから入手)
 #. Get PriceでEGG生成コストを取得
 #. Number of eggsに生成する個数を入力
-#. Generate EggsでEGG生成トランザクションを発行 (Animaを消費する)
+#. Generate EggsでEGG生成トランザクションを発行 (ANIMAを消費する)
 
 .. image:: ../img/egg-management-ui2.png
 
@@ -28,5 +28,5 @@ Validator管理画面内のEGGページで、EGGを生成することができ�
 .. admonition:: EGG生成に失敗する場合の確認点
 
   - EGG生成に使用するANMが不足していないか
-  - Matrix内にShardが不足していないか
+  - Matrix内にSHARDが不足していないか
   - Matrixに対応するSquare Keyを所持しているか

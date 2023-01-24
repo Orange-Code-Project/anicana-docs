@@ -1,5 +1,5 @@
 #######################################
-ナイツ・オブ・ラウンドテーブルの役職
+Knights of the Round Table の役職
 #######################################
 
 役職
@@ -19,29 +19,29 @@
 
 * Queen
 
-Queenは、ANICANA（アニカナ）に参加しているValidatorに対して、Knightの任命権とはく奪権を持つ。
-Queenは、Validatorから自動的に一定割合のアニマを受け取る。
+Queenは、ANICANAに参加しているValidatorに対して、Knightの任命権とはく奪権を持つ。
+Queenは、Validatorから自動的に一定割合のANMを受け取る。
 Knightに任命された場合、そのValidatorにはKnightのNoが割り当てられる。KnightはQueenの任命に対して、拒否することはできない。
 12名のKnightsから投票で選出され、任期は2年で再選は2回までとなる。
 
 * Kinghts
 
-Knightは、ANICANA（アニカナ）に新規に参加したいValidatorに対して、参加の承認を与える権限を持つ。
-12名のKnightsは、自身のNoに紐づけられたValidatorから生み出される一定数のアニマをKnightの在籍期間中受け取ることができる。
+Knightは、ANICANAに新規に参加したいValidatorに対して、参加の承認を与える権限を持つ。
+12名のKnightsは、自身のNoに紐づけられたValidatorから生み出される一定数のANMをKnightの在籍期間中受け取ることができる。
 新たなQueenが決定した場合、KnightはQueenにより新たに任命される。
 
 * Pawns
 
-Knightに任命されることにより、ANICANA（アニカナ）に参加したノード、またはその候補。
+Knightに任命されることにより、ANICANAに参加したノード、またはその候補。
 参加承認は、Knight1名の承認で正式な参加承認となる。
 新規に参加したValidatorは、参加を承認したKnightのNoが割り当てられる。
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Knights & Queen のアニマの受け取り
+Knights & Queen のANMの受け取り
 ============================================
-Queen は、Validator から自動的に一定割合のアニマを受け取る。
-Knightは、自身に割り当てられているNoが承認したValidator（ゲームオーナー達）がシステムに対して支払ったGas（アニマ）から、自動的に一定割合のアニマを受け取る。
+Queen は、Validator から自動的に一定割合のANMを受け取る。
+Knightは、自身に割り当てられているNoが承認したValidator（ゲームオーナー達）がシステムに対して支払ったGas（ANM）から、自動的に一定割合のANMを受け取る。
 
 .. image:: ../img/rounds-of-logic-01.png
 
@@ -58,7 +58,7 @@ Queenの選挙
 Queenの選挙に立候補という概念はなく、Knightが自身に対して投票することはできない。
 Knightは最低6票を得ることにより、Queenに選出される。
 選挙により最低得票数に満たない場合は、必要最低得票数を誰かが獲得するまで選挙を行うことになる。
-Queenが不在の期間中は、KnightsoftheRoundTableで得られるKnightに対するアニマの供給は行われず、得られるはずのアニマが消失してしまうため、Queenの選出は早期に決定する必要がある。
+Queenが不在の期間中は、Knights of the Round Tableで得られるKnightに対するANMの供給は行われず、得られるはずのANMが消失してしまうため、Queenの選出は早期に決定する必要がある。
 
 * Queenの不信任案
 
@@ -67,7 +67,7 @@ Knightは不信任案が提出された場合には、必ず“信任”もし�
 9名の不信任でQueenを解任することができる。
 不信任となりQueenを解任されたValidatorは一般Validatorになる。
 新たなQueenが決定した場合、KnightはQueenにより新たに任命されるため、既存のKnightが再任される保証はない。
-Knightに再任された場合でも、KnightのNo（席）が異なる場合には、その再任されたKnightのNo（席）に紐づいたアニマが受け取れることになる。
+Knightに再任された場合でも、KnightのNo（席）が異なる場合には、その再任されたKnightのNo（席）に紐づいたANMが受け取れることになる。
 
 
 Validator(候補)ノードの開放

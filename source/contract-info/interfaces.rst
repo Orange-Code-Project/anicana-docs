@@ -7,10 +7,10 @@ MATRIX規格
 
 以下のインタフェースを持つコントラクトは、MatrixとしてMatrixMasterに登録できる。::
 
-    // MatrixMasterに対して、Eggの材料を提示する。
+    // MatrixMasterに対して、EGGの材料を提示する。
     function spawnCondition() external returns(IEggBuilder.ComposeCondition memory);
 
-    // Eggの生成に必要とするAnimaの量を返す。生成に連動して、支払われたAnimaが開発者に付与される。
+    // EGGの生成に必要とするANIMAの量を返す。生成に連動して、支払われたANIMAが開発者に付与される。
     function getPrice() external view returns (uint256);
 
     // Matrix使用者はここで返されるIDのスクエアキーを持つユーザに限られる。

@@ -5,7 +5,7 @@ ARCANAの属性値計算
 Green Star 抽選確率
 =====================
 
-Arcana生成時に以下の確率で抽選が行われる。
+ARCANA生成時に以下の確率で抽選が行われる。
 
 .. csv-table::
     :header-rows: 1

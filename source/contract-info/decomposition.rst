@@ -1,9 +1,9 @@
 ###########################
-Arcanaの分解
+ARCANAの分解
 ###########################
 
 
-Arcanaの分解時、
+ARCANAの分解時、
 
 #. 分解完了までの時間 
 #. 生成されるSHARDの数
@@ -12,10 +12,10 @@ Arcanaの分解時、
 
 -------------------------------------------------------------------------------
 
-Arcana分解の所要時間
+ARCANA分解の所要時間
 =====================================
 
-Arcanaトークンの分解の所要時間はgene, salt（内部定数）に基づくハッシュ処理で決定する。
+ARCANAトークンの分解の所要時間はgene, salt（内部定数）に基づくハッシュ処理で決定する。
 分解所要時間は5分～48時間の間の16通りの値をとり、期待値は8.7時間。生起確率は以下の通り。
 
 .. csv-table::
@@ -43,10 +43,10 @@ Arcanaトークンの分解の所要時間はgene, salt（内部定数）に基�
 
 -------------------------------------------------------------------------------
 
-Arcana分解で得られるArcana Shardの数
+ARCANA分解で得られるARCANA SHARDの数
 =====================================
 
-Arcanaトークンを分解した際に得られるShardの数はgene, salt（内部定数）に基づくハッシュ処理で決定する。
+ARCANAトークンを分解した際に得られるSHARDの数はgene, salt（内部定数）に基づくハッシュ処理で決定する。
 Shardの数は50～2500の間の16通りの値をとり、期待値は300。生起確率は以下の通り。
 
 .. csv-table::
@@ -73,30 +73,21 @@ Shardの数は50～2500の間の16通りの値をとり、期待値は300。生�
 
 -------------------------------------------------------------------------------
 
-Arcana分解の手順
+ARCANA分解の手順
 =====================================
 
-Arcanaの分解は以下の手順で行う。
+ARCANAの分解は以下の手順で行う。
 
-#. Decomposerに対してArcana Tokenをapproveする
-
-   　⇒使用するfunction：Arcana.approve(to, tokenId)
-
-#. 分解を開始する
-
-   　⇒使用するfunction：Decomposer.beginDecompose(tokenId)
-
-#. 分解ジョブの詳細情報を取得して完了時刻を確認
-
-   　⇒使用するfunction：Decomposer.getState(jobId)
-
-#. 分解完了を待つ
-
-　　　
-
-#. 分解を終了させ、Shardを受け取る
-
-   　⇒使用するfunction：Decomposer.endDecompose(jobId)
+| #. Decomposerに対してARCANA Tokenをapproveする
+|    　⇒使用するfunction：Arcana.approve(to, tokenId)
+| #. 分解を開始する
+|    　⇒使用するfunction：Decomposer.beginDecompose(tokenId)
+| #. 分解ジョブの詳細情報を取得して完了時刻を確認
+|    　⇒使用するfunction：Decomposer.getState(jobId)
+| #. 分解完了を待つ
+| 　　　
+| #. 分解を終了させ、SHARDを受け取る
+|    　⇒使用するfunction：Decomposer.endDecompose(jobId)
 
 - 参考動画
 

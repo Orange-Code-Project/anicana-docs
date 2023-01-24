@@ -9,10 +9,10 @@
     :align: center
 
     "要素", "説明"
-    "Quorumノード", "アニカナブロックチェーンノード本体"
+    "Quorumノード", "ANICANAブロックチェーンノード本体"
     "Key Management System", "Validatorの秘密鍵を管理するシステム"
     "Validator管理UI", "このUIを通じてValidatorのノード管理や、EGG管理を行う"
-    "Explorer", "アニカナチェーン上のトランザクションを参照するUI"
+    "Explorer", "ANICANAチェーン上のトランザクションを参照するUI"
 
 --------------------------------------------------------------------------------
 
@@ -23,5 +23,5 @@
 .. figure:: ../img/system-structure.png
     :align: center
 
-    アニカナコンソーシアムチェーン
+    ANICANAコンソーシアムチェーン
 

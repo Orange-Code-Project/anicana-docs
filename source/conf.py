@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Anicana Technical Documents'
-copyright = '2022, Anicana PJ'
-author = 'Anicana PJ'
+project = 'ANICANA Technical Documents'
+copyright = '2022, ANICANA PJ'
+author = 'ANICANA PJ'
 
 
 # -- General configuration ---------------------------------------------------
