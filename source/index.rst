@@ -56,7 +56,7 @@ ANICANA Technical Documents
    /egg-management/stored-eggs
    /egg-management/IPFS-upload
    /egg-management/anima
-
+   /egg-management/ValidatorUI
 
 .. toctree::
    :maxdepth: 2
