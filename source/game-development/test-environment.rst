@@ -55,6 +55,6 @@
     :align: center
 
     コントラクト, abi
-    EGG, :download:`egg.json<../abi/egg.json>`
+    Egg, :download:`egg.json<../abi/egg.json>`
 
 
