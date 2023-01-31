@@ -59,3 +59,6 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_extra_path = ['movie']
+
+# -- Options for latex -------------------------------------------------
+latex_docclass = {'manual': 'jsbook'}
