@@ -33,3 +33,14 @@ EGG一覧取得例(js)::
 
             console.log(eggIds);
         }
+
+
+保有EGG一括取得function::
+
+        /// @param account トークンを保持しているアカウントのアドレス
+        /// @param index 取得したいトークンのindex番号
+        /// @param limit 取得したいトークンの最大数
+        /// @return トークン情報の配列
+        /// limit = 1000程度までは1回で取得可能。上限はスマートコントラクトの状態によるが、上限を超えるとエラーが返る。
+        function tokenOfOwnerByIndexBatch(address owner, uint256 index, uint256 limit) public view returns (uint256[] memory)
+
