@@ -32,5 +32,5 @@ Knights of the Round Table には
 #. Queenの任期は2年（始期と終期を記入）。
 #. Queenの任期が満了すると、次のQueenは12名のKnightの投票によって選出される。
 #. ValidatorのみKnightになれる権利を持つ。 
-#. Knightは、自身に割り当てられているNoが承認したValidator（ゲームオーナー達）がシステムに対して支払ったGas（ANM）から、自動的に一定割合のANMを受け取れる。
+#. Knightは、自身に割り当てられているNoが承認したValidator（パブリッシャー達）がシステムに対して支払ったGas（ANM）から、自動的に一定割合のANMを受け取れる。
 

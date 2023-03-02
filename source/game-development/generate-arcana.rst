@@ -4,7 +4,7 @@ ARCANA生成API
 
 
 
-次のスクリプトタグをゲームシステム側に埋め込むことで、ARCANA生成画面を呼び出すことができます。
+次のスクリプトタグをコンテンツ側に埋め込むことで、ARCANA生成画面を呼び出すことができます。
 
 
 API仕様
@@ -43,7 +43,7 @@ ARCANA生成ページ呼び出しスクリプト
     data-seed, seed
     data-signature, game maker側による署名
     callback-url (URL), "callbackのURL。requestIdとtxHashがGETパラメータとして追加されてredirectされる。http://test.comを指定した場合、http://test.com?requestId=1&txHash=xxxxxのようになる。また、callbackは指定しなくても良い。その場合はportal上のウォレットページに遷移するボタンが表示される。"
-    data-requestid (数値) uint, ゲームメーカー毎の任意の数値。 0 ~ 18446744073709551615
+    data-requestid (数値) uint, パブリッシャー毎の任意の数値。 0 ~ 18446744073709551615
     data-toaddr, 配布先wallet address
     data-logout, true/false、または無し。trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
 

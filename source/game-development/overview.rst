@@ -1,13 +1,13 @@
 ###########################
-ゲーム開発概要
+コンテンツ開発概要
 ###########################
 
 
-あなたのゲームとANICANAを接続すると、あなたのゲームのユーザにARCANA NFTを生成する機会を提供することができる。
-ゲームをプレイした結果に応じて、ユーザは自分の好きな画像や名前を設定したARCANA NFTを自分のウォレットに獲得することができる。
+あなたのコンテンツとANICANAを接続すると、あなたのコンテンツのユーザにARCANA NFTを生成する機会を提供することができる。
+コンテンツをプレイした結果に応じて、ユーザは自分の好きな画像や名前を設定したARCANA NFTを自分のウォレットに獲得することができる。
 
-ARCANA NFTはゲームメーカーが所持するEGGから生成され、EGGはそれぞれ遺伝子情報を持ち、生成されるARCANA NFTの持つ「パラメータ」に影響を与える。
-また、EGGからARCANAが生成される際にゲーム側からseed値をARCANA NFTに与える必要があり、このseed値によっても「パラメータ」は影響を受ける。
+ARCANA NFTはパブリッシャーが所持するEGGから生成され、EGGはそれぞれ遺伝子情報を持ち、生成されるARCANA NFTの持つ「パラメータ」に影響を与える。
+また、EGGからARCANAが生成される際にコンテンツ側からseed値をARCANA NFTに与える必要があり、このseed値によっても「パラメータ」は影響を受ける。
 
 
 -----------------------------------------------------------------------------------
@@ -29,14 +29,14 @@ ARCANA NFTはゲームメーカーが所持するEGGから生成され、EGGは�
     "EGGの生成", ":doc:`EGG生成する </egg-management/generate-eggs>` を参照。"
 
 
-ゲーム開発において行うことができるのは以下の2つ。
+コンテンツ開発において行うことができるのは以下の2つ。
 
 .. csv-table::
     :header-rows: 1
     :align: center
 
     "手順", "詳細"
-    "ゲームとウォレットの接続", ":doc:`ウォレット接続 </game-development/wallet-connection>` を参照。"
+    "コンテンツとウォレットの接続", ":doc:`ウォレット接続 </game-development/wallet-connection>` を参照。"
     "ARCANA生成API連携", ":doc:`ARCANA生成フロー </game-development/call-arcana-generator>` を参照。"
     "LEVICA決済", ":doc:`LEVICA決済 </game-development/levica>` を参照。"
 

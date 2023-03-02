@@ -33,7 +33,7 @@ ANICANA Technical Documents
 
 .. toctree::
    :maxdepth: 2
-   :caption: ゲームの開発:
+   :caption: コンテンツの開発:
 
    /game-development/overview
    /game-development/test-environment

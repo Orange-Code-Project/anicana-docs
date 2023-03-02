@@ -41,7 +41,7 @@ Knightに任命されることにより、ANICANAに参加したノード、ま�
 Knights & Queen のANMの受け取り
 ============================================
 Queen は、Validator から自動的に一定割合のANMを受け取る。
-Knightは、自身に割り当てられているNoが承認したValidator（ゲームオーナー達）がシステムに対して支払ったGas（ANM）から、自動的に一定割合のANMを受け取る。
+Knightは、自身に割り当てられているNoが承認したValidator（パブリッシャー達）がシステムに対して支払ったGas（ANM）から、自動的に一定割合のANMを受け取る。
 
 .. image:: ../img/rounds-of-logic-01.png
 
