@@ -36,25 +36,37 @@ ARCANA生成ページ呼び出しスクリプト
     :header-rows: 1
     :align: center
 
-    パラメータ, 説明
-    id, gen_arcana_script (変更しないで下さい)
-    src, {endpoint}//arcana.js
-    data-eggid, egg id
-    data-seed, seed
-    data-signature, game maker側による署名
-    callback-url (URL), "callbackのURL。requestIdとtxHashがGETパラメータとして追加されてredirectされる。http://test.comを指定した場合、http://test.com?requestId=1&txHash=xxxxxのようになる。また、callbackは指定しなくても良い。その場合はportal上のウォレットページに遷移するボタンが表示される。"
-    data-requestid (数値) uint, パブリッシャー毎の任意の数値。 0 ~ 18446744073709551615
-    data-toaddr, 配布先wallet address
-    data-logout, true/false、または無し。trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
+    パラメータ, required/optional, 説明
+    id, required, gen_arcana_script (変更しないで下さい)
+    src, required, {endpoint}//arcana.js
+    data-eggid, required, egg id
+    data-seed, required, seed
+    data-signature, required, game maker側による署名
+    callback-url (URL), optional, "callbackのURL。requestIdとtxHashがGETパラメータとして追加されてredirectされる。http://test.comを指定した場合、http://test.com?requestId=1&txHash=xxxxxのようになる。また、callbackは指定しなくても良い。その場合はportal上のウォレットページに遷移するボタンが表示される。"
+    data-requestid (数値) uint, required, パブリッシャー毎の任意の数値。 0 ~ 18446744073709551615
+    data-toaddr, required, 配布先wallet address
+    data-logout, optional, true/false、または無し。trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
+    data-symbol, optional, パブリッシャー側で設定できるシンボル。
+    data-manaInfo, optional, パブリッシャー側で設定できる。コンテンツの体験情報を設定。
+    data-manaValue, optional, パブリッシャー側で設定できる数値。
+    data-manaAddress, optional, 中断されたARCANA生成のmanaAddressを指定。
 
 
+mana情報（manaInfo）::
 
+    コンテンツでの体験情報を設定できる。
+    例えばコンテンツ内で～を行った～を達成した等情報を設定する。
+    パブリッシャーはmana情報をもとに、～を行った～を達成したというmana情報を持つARCANAの保持者を対象にしたサービスを行うことが可能となる。
 
 直接生成ページを呼び出す場合は以下のようにする。::
 
     {endpoint}/arcana-gen/{eggId}/{seed}/{signature}/{requestId}/{toAddress}?r={callbackUrl}&logout=true
 
+   （mana情報あり）
+    {endpoint}/arcana-gen/{eggId}/{seed}/{signature}/{requestId}/{toAddress}/{symbol}/{manaInfo}/{manaValue}?r={callbackUrl}&logout=true
 
+   （manaAddress指定）
+    {endpoint}/arcana-gen/{manaAddress}
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
