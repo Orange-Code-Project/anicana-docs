@@ -14,9 +14,17 @@ ANICANA Technical Documents
    /overview/system-requirement
    /overview/consensus-algorithm
    /overview/how-to-join
-   /overview/knights-of-the-round-table
-   /overview/rounds-of-logic
+   
 
+.. toctree::
+   :maxdepth: 2
+   :caption: ANICANAメカニズム:
+
+   /mechanism/knights-of-the-round-table
+   /mechanism/rounds-of-logic
+   /mechanism/arcana-generate
+   /mechanism/ARCANA-life-cycle
+   /mechanism/ANICANA-life-cycle
 
 .. toctree::
    :maxdepth: 2
@@ -45,7 +53,7 @@ ANICANA Technical Documents
    /game-development/egg-balance
    /game-development/generate-signature
    /game-development/levica
-
+   /game-development/arcanaGeneratorInfo
 
 .. toctree::
    :maxdepth: 2
@@ -67,5 +75,8 @@ ANICANA Technical Documents
    /contract-info/decomposition
    /contract-info/attributes
 
+.. toctree::
+   :maxdepth: 2
+   :caption: appendics
 
-
+   /appendics/data-sign-text
