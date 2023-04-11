@@ -52,7 +52,8 @@ mana情報（manaInfo）::
    （manaAddress指定）
     {endpoint}/arcana-gen/{manaAddress}
 
-------------------------------------------------------------------------------------------------------------------------------------------
+
+※直接生成ページを呼び出す場合で、symbol, manaInfo, manaValue指定なしの場合、対象の箇所にnullを入れてください。
 
 ------------------------------------
 check status
@@ -87,10 +88,10 @@ Sample response
             "status": "done",
             "transaction_id": "0x2e35551b1bf7bb6942610be99dcf60fafe804f167c19a2070c45ff1a0a7f50de"
         },
-        "status": "done"
+        "status": "success"
     }
 
-statusの値
+statusの値（data内のstatus）
 
 .. csv-table::
     :header-rows: 1
