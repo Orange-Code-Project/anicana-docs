@@ -2,7 +2,7 @@
 ARCANA生成API
 ###########################
 
-次のスクリプトタグをコンテンツ側に埋め込むことで、ARCANA生成画面を呼び出すことができます。
+次のスクリプトタグをコンテンツ側に埋め込むことで、ARCANA生成画面を呼び出すことができる。
 
 API仕様
 ===========================
@@ -33,15 +33,11 @@ ARCANA生成ページ呼び出しスクリプト
     data-toaddr,      required, address, ARCANAの配布先wallet address
     data-logout,      optional, boolean, trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
     data-symbol,      optional, 文字列,  パブリッシャー側で設定できるシンボル。
-    data-manaInfo,    optional, 文字列,  パブリッシャー側でテキストを設定できる。
+    data-manaInfo,    optional, 文字列,  パブリッシャー側でテキストを設定できる。コンテンツでの体験情報や暗号化した個人情報などをここに書き込むことで、ARCANAに付加価値をもたせるなどの利用が想定される。
     data-manaValue,   optional, 数値,    パブリッシャー側で設定できる数値。
     data-manaAddress, optional, address, 中断されたARCANA生成のmanaAddressを指定。
 
 
-mana情報（manaInfo）::
-
-    コンテンツでの体験情報や暗号化した個人情報などをここに書き込むことで、ARCANAに付加価値をもたせるなどの利用が想定される。
-    
 直接生成ページを呼び出す場合は以下のようにする。::
 
     {endpoint}/arcana-gen/{eggId}/{seed}/{signature}/{requestId}/{toAddress}?r={callbackUrl}&logout=true
@@ -53,7 +49,13 @@ mana情報（manaInfo）::
     {endpoint}/arcana-gen/{manaAddress}
 
 
-※直接生成ページを呼び出す場合で、symbol, manaInfo, manaValue指定なしの場合、対象の箇所にnullを入れてください。
+.. admonition:: 指定なしの場合
+
+  直接生成ページを呼び出す場合で、symbol, manaInfo, manaValue指定なしの場合、対象の箇所にnullを入れてください。
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ------------------------------------
 check status
@@ -132,7 +134,7 @@ ARCANA生成までの手順は以下のような流れになる。
 #. 取得した秘密鍵で署名を作成。
 #. 上記で生成したEGG、署名を使用してARCANAを生成。
 
-staging環境では以下の手順で実施でる。
+staging環境では以下の手順で実施できる。
 
 #. Validator管理画面にメールアドレスで登録。walletが作成される。
 #. 上記で発行されたwalletaddressのprivatekeyを専用のサイトを使用し取得。表示されたprivatekeyの頭に0xをつけて使用し、署名の作成を行う。

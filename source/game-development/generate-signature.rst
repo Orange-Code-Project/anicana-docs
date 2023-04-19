@@ -14,21 +14,28 @@ ARCANA生成時に使用する署名データの作成
 
 署名データを作成するには、下記のデータが必要。
 
-* eggid : 対象のEGG トークンのID
-* toAddr : ARCANA生成先のアドレス（EGGの開封許諾を与える相手）
-* seed : コンテンツの結果値 
-* contract : Incubatorのコントラクトアドレス
-* privateKey : eggidオーナのprivate key。専用のサイトで取得した秘密鍵の頭に"0x"を付与して設定。
+.. csv-table::
+    :header-rows: 1
+    :align: center
 
-上記データを元に、以下の手順で署名対象データ:dataToBeSigned を作成する。::
+    パラメータ, 説明
+    eggid,       対象のEGG トークンのID
+    toAddr,      ARCANA生成先のアドレス（EGGの開封許諾を与える相手）
+    seed,        コンテンツの結果値 
+    contract,    Incubatorのコントラクトアドレス
+    privateKey,  eggidオーナのprivate key。専用のサイトで取得した秘密鍵の頭に"0x"を付与して設定。
+
+上記データを元に、以下の手順で署名対象データdataToBeSigned を作成する。::
 
     const genSig = require("./genSig.js");
 
     const signature = genSig.signForIncubate(eggid,toAddr,seed,contract,privateKey);
 
--------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ライブラリ
--------------------------
+======================================================================
+
 
 .. csv-table::
     :header-rows: 1
