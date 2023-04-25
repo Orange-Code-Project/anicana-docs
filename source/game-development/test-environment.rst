@@ -44,6 +44,10 @@ Ark.oneテストネット環境一覧
     Shard,0x4Ca7323b9fB0EEc64ff23De4dCC67f434626FcEd
     Square,0x8D3c73943b5ec3b64aeA43CD197F4214b0E70C38
     ArcanaGeneratorInfo,0xCa59B3373F247F115D5A867CB0E2b18cAA43C96d
+    DrawChain,0x0dBa82A6961089d6f9E367CF23FBF2DB57fE7238
+    DrawAbilityLimitter,0x7Bb1A9F8cbe09095444f53AAed0cCD4fDF694e2C
+    DrawPersonaCategoryLimitter,0x24D95C67b7320E9BeD08E8Cf80289ec2CfEbfEcd
+    DrawQuantityLimitter,0xfAC8df53015F814965a900bE89073Fc66f38DAc0
 
 -------------------------------------------------------------------
 
@@ -58,6 +62,10 @@ Ark.oneテストネット環境一覧
     コントラクト, abi
     Egg, :download:`egg.json<../abi/egg.json>`
     ArcanaGeneratorInfo, :download:`ArcanaGeneratorInfo.json<../abi/ArcanaGeneratorInfo.json>`
+    DrawChain, :download:`DrawChain.json<../abi/DrawChain.json>`
+    DrawAbilityLimitter, :download:`DrawAbilityLimitter.json<../abi/DrawAbilityLimitter.json>`
+    DrawPersonaCategoryLimitter, :download:`DrawPersonaCategoryLimitter.json<../abi/DrawPersonaCategoryLimitter.json>`
+    DrawQuantityLimitter, :download:`DrawQuantityLimitter.json<../abi/DrawQuantityLimitter.json>`
 
 -------------------------------------------------------------------
 

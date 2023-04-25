@@ -53,6 +53,7 @@ ANICANA Technical Documents
    /game-development/egg-balance
    /game-development/generate-signature
    /game-development/levica
+   /game-development/drawchain-introduction
    /game-development/arcanaGeneratorInfo
 
 .. toctree::
