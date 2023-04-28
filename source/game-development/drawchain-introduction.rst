@@ -155,6 +155,8 @@ History
             uint256 drawChainId;
             @notice persona Id
             uint256 personaId;
+            @notice owner of persona at the time of draw
+            address personaOwner;
             @notice drawしたタイムスタンプ
             uint128 drawnOn;
             @notice deliver(景品を配布した)したタイムスタンプ
@@ -265,5 +267,13 @@ draw可能回数を制限するコントラクト
 | (DrawQuantityLimitter.sol)
 | DrawChain登録時のAuthorizerInfoにコントラクトを設定、presetIdにdraw可能回数を設定する。
 | drawされた回数が指定したdraw可能回数より小さい場合、draw可能となる。
+
+
+draw()可能な呼び出し元をdrawchainに紐づくsquare key のフォロワーに制限するコントラクト
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| (DrawFollowerLimitter.sol)
+| DrawChain登録時のAuthorizerInfoにコントラクトを設定する。
+| drawを行ったユーザーが対象のdrawchainに紐づくsquare key のフォロワーかを判定し、フォロワーであった場合draw可能となる。
 
 

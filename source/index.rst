@@ -8,6 +8,12 @@ ANICANA Technical Documents
 
 .. toctree::
    :maxdepth: 2
+   :caption: 変更履歴:
+
+   /change-history/change-history
+
+.. toctree::
+   :maxdepth: 2
    :caption: Overview:
 
    /overview/what-is-anicana-chain
