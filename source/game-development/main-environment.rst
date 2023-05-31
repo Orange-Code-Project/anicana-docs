@@ -16,7 +16,7 @@
 
     項目, 説明
     Chain ID, 222222
-    JSON-RPC, "https://chain.anicana.org/"
+    JSON-RPC, "https://chains.anicana.org/"
 
 -------------------------------------------------------------------
 
