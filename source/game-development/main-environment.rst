@@ -35,10 +35,12 @@
     Egg,0x9c382dd80F9D0865a7fC0953BaB6EdDb186FBaBa
     EggBuilder,0x4cA9451003aD629e47d0C47d1164d6B66693811d
     Incubator,0x46eaeBB59a49C4D2363e6a7134710D943AF1aAEb
-    MatrixMaster,0xd41D017c047BC6B378b16D5d7b72FD7D3672c53f
+    MatrixMaster,0xAfC75DD63b30c55a3610ffa447c98c8c88CA1d0c
     Shard,0xD1cF6C92DE56C791e036fA4d21914213c6CBaC8a
     Square,0x52AB107d2c3Fb91aE2028d72105Aa8Bb5C55E667
     ArcanaGeneratorInfo,0x338A498Ac956B67730c667efD02252bE1E2615b7
+    DrawChain,                  0x894aB05BF700BA567530EBB1C2e8E5319DdB4233
+    Persona,                    0xCA6f428D07b00837C047bbeBe4a75F993C2288c1
 
 -------------------------------------------------------------------
 
@@ -53,6 +55,8 @@
     コントラクト, abi
     Egg, :download:`egg.json<../abi/egg.json>`
     ArcanaGeneratorInfo, :download:`ArcanaGeneratorInfo.json<../abi/ArcanaGeneratorInfo.json>`
+    DrawChain,                   :download:`DrawChain.json<../abi/DrawChainV1.json>`
+    Persona,                     :download:`Persona.json<../abi/Persona.json>`
 
 -------------------------------------------------------------------
 
