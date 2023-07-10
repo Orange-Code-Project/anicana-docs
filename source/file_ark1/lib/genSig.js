@@ -1,7 +1,7 @@
 const ethAbi = require("ethereumjs-abi");
 const ethUtil = require("ethereumjs-util");
 const { web3 } = require("openzeppelin-test-helpers/src/setup");
-const { genSigConfig,eggSigConfig,arcanaSigConfig,incubatorSigConfig } = require("./genSig.cfg.json");
+const { genSigConfig,eggSigConfig,arcanaSigConfig,incubatorSigConfig,personaSigConfig } = require("./genSig.cfg.json");
 /**
  * Javascript module to construct and hash EIP-712 typed messages to be signed by private key.
  * [EIP712]{@link https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md} standard
@@ -261,8 +261,17 @@ function signForArcanaApprove(toAddress, tokenId, contract, privateKey) {
 }
 
 function forArcanaApprove(toAddress, tokenId, contract, privateKey) {
-  return forApprove(toAddress, tokenId, contract.address, privateKey);
+  return signForArcanaApprove(toAddress, tokenId, contract.address, privateKey);
 }
+
+function signForPersonaApprove(toAddress, tokenId, contract, privateKey) {
+  return forApprove(toAddress, tokenId, personaSigConfig, contract, privateKey);
+}
+
+function forPersonaApprove(toAddress, tokenId, contract, privateKey) {
+  return signForPersonaApprove(toAddress, tokenId, contract.address, privateKey);
+}
+
 
 /**
  * 署名付きTransferFrom用の署名を作成。
@@ -300,7 +309,7 @@ function signForArcanaTransferFrom(from, to, tokenId, contract, privateKey) {
   return forTransferFrom(from,to, tokenId, arcanaSigConfig, contract, privateKey);
 }
 function forArcanaTransferFrom(from, to, tokenId, contract, privateKey) {
-  return signForArcanaTransferFrom(from,to, tokenId, arcanaSigConfig, contract.address, privateKey);
+  return signForArcanaTransferFrom(from,to, tokenId, contract.address, privateKey);
 }
 
 function signForIncubate(eggTokenId,to,seed,contractAddr,privateKey) {
@@ -313,11 +322,19 @@ function forIncubate(eggTokenId,to,seed,contract,privateKey) {
   return signForIncubate(eggTokenId,to,seed,contract.address,privateKey);
 }
 
+function signForPersonaTransferFrom(from, to, tokenId, contract, privateKey) {
+  return forTransferFrom(from,to, tokenId, personaSigConfig, contract, privateKey);
+}
+function forPersonaTransferFrom(from, to, tokenId, contract, privateKey) {
+  return signForPersonaTransferFrom(from,to, tokenId, contract.address, privateKey);
+}
 
 module.exports = {
   digestForApprove, digestForTransferFrom,
   signForEggApprove, forEggApprove,
   signForArcanaApprove, forArcanaApprove,
   signForArcanaTransferFrom, forArcanaTransferFrom,
-  signForIncubate, forIncubate
+  signForIncubate, forIncubate,
+  signForPersonaApprove, forPersonaApprove,
+  signForPersonaTransferFrom, forPersonaTransferFrom
 };

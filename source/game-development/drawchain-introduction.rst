@@ -1,5 +1,5 @@
 ###########################
-Drawchainの導入
+DrawChainの導入
 ###########################
 
 概要図
@@ -11,27 +11,22 @@ Drawchainの導入
 
 Drawchainの設定
 ============================================
-| Drawchainを実行する際の条件を設定できる。
+| DrawChainを実行する際の条件を設定できる。
 | IDrawChainAuthorizerインターフェースを継承したコントラクトを登録することで設定が可能。
 
 ■パブリッシャー向けfunction
 
-①Drawchainを実行する際の条件を設定するcontractを作成
+①DrawChainを実行する際の条件を設定するcontractを作成
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-overrideして作成(IDrawChainAuthorizer.sol)::
+IDrawChainAuthorizerインターフェースを実装したコントラクトを作成(IDrawChainAuthorizer.sol)::
 
         @param drawChainId DrawChain ID
         @param presetId プリセット番号（実装コントラクト内で自由に定義する）
-        @param personaId persona Id
-        authorizeDraw (uint256 drawChainId,uint256 presetId,uint256 personaId) external view returns (bool);
+        @param personaId PERSONA Id
+        function authorizeDraw (uint256 drawChainId,uint256 presetId,uint256 personaId) external view returns (bool);
 
-.. csv-table::
-    :header-rows: 1
-    :align: center
-
-    IF, ダウンロード
-    IDrawChainAuthorizer, :download:`IDrawChainAuthorizer.sol<../if/IDrawChainAuthorizer.sol>`
+インターフェースファイルは環境情報を参照。
 
 
 ②DrawChainを登録する。
@@ -42,10 +37,10 @@ overrideして作成(IDrawChainAuthorizer.sol)::
 
 DrawChainを登録するfunction(Drawchain.sol)::
 
-        @param squareKey drawChainに紐づくSquareKey
+        @param squareKey DrawChainに紐づくSquareKey
         @param _authorizers authorizerのリスト
         @return DrawChain ID
-        newDrawChain(uint256 squareKey,AuthorizerInfo[] calldata _authorizers) public returns(uint256)
+        function newDrawChain(uint256 squareKey,AuthorizerInfo[] calldata _authorizers) public returns(uint256)
 
 AuthorizerInfo[]::
 
@@ -61,31 +56,33 @@ AuthorizerInfo[]::
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | 初期登録時はtrue: draw可能が設定されている。
-| drawChain作成者はdrawの実行を制御可能であり、アクティブ＝true: draw可能、非アクティブ=false: draw不可を変更できる。
+| DrawChain作成者はdrawの実行を制御可能であり、アクティブ＝true: draw可能、非アクティブ=false: draw不可を変更できる。
 
 DrawChainのアクティブ、非アクティブの設定を行うfunction(Drawchain.sol)::
 
-        @param drawChainId drawChain ID
-        @param active true: draw可能、false: draw不可
-        function deactivateDrawChain(uint256 drawChainId,bool active)
+        @param drawChainId DrawChain ID
+        @param active true: draw可能、false: draw不可能
+        function deactivateDrawChain(uint256 drawChainId,bool active) public;
 
 --------------------------------------------------------------------------------------------------------------------------------
 
 その他Drawchainに関するfunction
 ============================================
 
-指定したpersonaがdraw可能なdrawChain IDの配列を返す(Drawchain.sol)
+指定したPERSONAがdraw可能なDrawChain IDの配列を返す(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
-        @param from 検査対象drawChain 開始ID (inclusive)
-        @param until 検査対象drawChain 終了ID (inclusive)
-        @param limit 成功するdrawChainがlimitに達したら検索を終了する（返す配列の最大要素数）
-        @param personaId drawChainを引くpersonaID
-        @return drawが成功する drawChainのID配列
+        @param from 検査対象DrawChain 開始ID (inclusive)
+        @param until 検査対象DrawChain 終了ID (inclusive)
+        @param limit 成功するDrawChainがlimitに達したら検索を終了する（返す配列の最大要素数）
+        @param personaId DrawChainを引くPERSONA ID
+        @return drawが成功する DrawChainのID配列
         function availables(uint256 from,uint256 until,uint256 limit,uint256 personaId) public view returns(uint256[] memory) 
 
-※availables()は広い範囲を検索しようとするとgas不足になる可能性があるので注意してください。
+.. admonition:: 指定範囲について
+
+  availables()は広い範囲を検索しようとするとgas不足になる可能性があるので注意してください。
 
 DrawChain情報を取得する(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,7 +90,7 @@ DrawChain情報を取得する(Drawchain.sol)
 
         @param fromId 先頭のDrwaChain ID
         @param count 取得するDrawChain情報数
-        @return DrawChain情報の配列
+        @return DrawChainInfoの配列
         function getDrawChain(uint256 fromId,uint256 count) public view returns(DrawChainInfo[] memory)
 
 DrawChainInfo
@@ -110,14 +107,15 @@ DrawChainInfo
             uint128 pad4;
         }
 
-drawChain毎のdraw数（履歴数）を返す(Drawchain.sol)
+DrawChain毎のdraw数（履歴数）を返す(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
         @param drawChainId DrawChain ID
+        @return draw数（履歴数）
         function drawHistoryCountByDrawChain(uint256 drawChainId) public view returns(uint256)
 
-drawChain毎のdraw履歴を返す（batch version)(Drawchain.sol)
+DrawChain毎のdraw履歴を返す（batch version)(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
@@ -126,19 +124,19 @@ drawChain毎のdraw履歴を返す（batch version)(Drawchain.sol)
         @return draw履歴配列
         function drawHistoryByDrawChain(uint256 drawChainId,uint256 fromIdx,uint256 count) public view returns(History[] memory)
 
-persona毎のdraw数（履歴数）を返す(Drawchain.sol)
+PERSONA毎のdraw数（履歴数）を返す(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
-        @param personaId persona Id
+        @param personaId PERSONA Id
         @return draw数（履歴数）
         function drawHistoryCountByPersona(uint256 personaId) public view returns(uint256)
 
-persona毎のdraw履歴を返す（batch version)(Drawchain.sol)
+PERSONA毎のdraw履歴を返す（batch version)(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
-        @param personaId persona Id
+        @param personaId PERSONA Id
         @param fromIdx 開始index (inclusive)
         @param count 取得するdraw履歴数
         @return draw履歴配列
@@ -153,9 +151,9 @@ History
             uint256 id;
             @notice drwaChain Id
             uint256 drawChainId;
-            @notice persona Id
+            @notice PERSONA Id
             uint256 personaId;
-            @notice owner of persona at the time of draw
+            @notice owner of PERSONA at the time of draw
             address personaOwner;
             @notice drawしたタイムスタンプ
             uint128 drawnOn;
@@ -163,25 +161,45 @@ History
             uint128 deliveredOn;
         }
 
-drawChain+persona毎のdraw数（履歴数）を返す(Drawchain.sol)
+DrawChain+PERSONA毎のdraw数（履歴数）を返す(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
         @param drawChainId DrawChain ID
-        @param personaId persona Id
+        @param personaId PERSONA Id
         @return draw数（履歴数）
         function drawHistoryCountByDrawChainAndPersona(uint256 drawChainId,uint256 personaId) public view returns(uint256)
 
-drawChain+persona毎のdraw履歴を返す（batch version)(Drawchain.sol)
+DrawChain+PERSONA毎のdraw履歴を返す（batch version)(Drawchain.sol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
         @param drawChainId DrawChain ID
-        @param personaId persona Id
+        @param personaId PERSONA Id
         @param fromIdx 開始index (inclusive)
         @param count 取得するdraw履歴数
         @return draw履歴配列
         function drawHistoryByDrawDrawChainAndPersona(uint256 drawChainId,uint256 personaId,uint256 fromIdx,uint256 count) public view returns(History[] memory)
+
+PERSONA owner毎のdraw数（履歴数）を返す(Drawchain.sol)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+        @param personaOwner Persona owner アドレス
+        @return draw数（履歴数）
+        function drawHistoryCountByPersonaOwner (address personaOwner) public view returns(uint256)
+
+PERSONA owner毎のdraw履歴を返す（batch version)(Drawchain.sol)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+        @param personaOwner Persona owner アドレス
+        @param fromIdx 開始index (inclusive)
+        @param count 取得するdraw履歴数
+        @return draw履歴配列
+        function drawHistoryByPersonaOwner (address personaOwner,uint256 fromIdx,uint256 count) public view returns(History[] memory)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -195,12 +213,12 @@ Drawchainの実行
 DrawChainを引くfunction(Drawchain.sol)::
 
         @param drawChainId DrawChain ID
-        @param personaId Persona ID
+        @param personaId PERSONA ID
         @return 0：draw失敗。 0以外：historyのindex
         function draw(uint256 drawChainId,uint256 personaId) public returns(uint256)
 
 
-| ②景品を配布した際にdrawChain作成者に呼び出してもらう
+| ②景品を配布した際にDrawChain作成者（パブリッシャー）に呼び出してもらう
 | deliver(景品を配布した)したタイムスタンプを登録。
 
 | ■パブリッシャー向けfunction
@@ -209,6 +227,15 @@ DrawChainを引くfunction(Drawchain.sol)::
 
         @param historyId draw が成功した際に返す history Id
         function delivered(uint256 historyId)
+
+.. admonition:: タイムスタンプについて
+
+  | delivered()はオプションになります。
+  | 景品を配布した際に呼び出しを行うことで、History構造体のdeliveredOnにタイムスタンプが登録されます。
+  | 実行されなかった場合も配布の履歴がブロックチェーンレベルで残らないという点以外は影響はありません。
+  | 実施頂くメリットとしては以下のような点になります。
+  | ・ブロックチェーンレベルでタイムスタンプ設定されるため改ざんされない
+  | ・将来スマートコントラクト上でのほかのプログラムとの連携がある場合に使用できる
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -219,7 +246,7 @@ DrawChainを引くfunction(Drawchain.sol)::
 | 現在利用可能なIDrawChainAuthorizerインターフェースを実装したコントラクトは以下となる。
 | 有効にするには、DrawChain登録時のAuthorizerInfoにコントラクトを設定する必要がある。
 
-draw可能な personaの能力値を制限するコントラクト
+draw可能な PERSONAの能力値を制限するコントラクト
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | (DrawAbilityLimitter.sol)
@@ -253,12 +280,12 @@ Limit::
             uint16 max;
         }
 
-draw可能なpersona categoryを制限するコントラクト
+draw可能なPERSONA categoryを制限するコントラクト
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | (DrawPersonaCategoryLimitter.sol)
 | DrawChain登録時のAuthorizerInfoにコントラクトを設定、presetIdに指定したいカテゴリを設定する。
-| drawするPERSONAのpersonaIdに含まれるカテゴリとpresetIdに指定したカテゴリが一致した場合、draw可能となる。
+| drawするPERSONAのPERSONA Idに含まれるカテゴリとpresetIdに指定したカテゴリが一致した場合、draw可能となる。
 
 
 draw可能回数を制限するコントラクト
@@ -269,11 +296,31 @@ draw可能回数を制限するコントラクト
 | drawされた回数が指定したdraw可能回数より小さい場合、draw可能となる。
 
 
-draw()可能な呼び出し元をdrawchainに紐づくsquare key のフォロワーに制限するコントラクト
+draw()可能な呼び出し元をDrawChainに紐づくsquare key のフォロワーに制限するコントラクト
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | (DrawFollowerLimitter.sol)
 | DrawChain登録時のAuthorizerInfoにコントラクトを設定する。
-| drawを行ったユーザーが対象のdrawchainに紐づくsquare key のフォロワーかを判定し、フォロワーであった場合draw可能となる。
+| drawを行ったユーザーが対象のDrawChainに紐づくsquare key のフォロワーかを判定し、フォロワーであった場合draw可能となる。
 
+| square key のフォロワーはブラックリストを設定することができる。
+| ブラックリストに登録するとフォロワーはフォローが外れ、再フォローすることができなくなる。
+| 再フォローを実施するためにはブラックリストの登録を解除される必要がある。
+| ブラックリストへの登録・登録解除はsquare key のオーナーが実施することができる。
+
+| 【SquareSupplement.sol】
+
+ブラックリストへの登録・登録解除function::
+
+        @param squareKey 対象の squareKey
+        @param _address フォロワーアドレス
+        @param isBlack true: 登録、fale: 登録解除
+        function setBlackList(uint256 squareKey,address _address,bool isBlack) public
+
+同一PERSONAによるdraw()可能回数を制限するコントラクト
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| (DrawCountLimitter.sol)
+| DrawChain登録時のAuthorizerInfoにコントラクトを設定、presetIdにdraw可能回数を設定する。
+| 同一personaによってdrawされた回数が指定したdraw可能回数より小さい場合、draw可能となる。
 

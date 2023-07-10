@@ -59,8 +59,14 @@ ANICANA Technical Documents
    /game-development/egg-balance
    /game-development/generate-signature
    /game-development/levica
+   /game-development/persona
+   /game-development/persona-installation-procedure
+   /game-development/persona-absorb
    /game-development/drawchain-introduction
+   /game-development/persona-introduction
+   /game-development/persona-user-use
    /game-development/arcanaGeneratorInfo
+   /game-development/anicana-api
 
 .. toctree::
    :maxdepth: 2

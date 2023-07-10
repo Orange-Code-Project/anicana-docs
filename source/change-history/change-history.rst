@@ -7,6 +7,69 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "4.", "2023/07/10", "1.1.0", "| 以下のページを追加
+    | 　・PERSONA概要
+    | 　・PERSONA導入手順
+    | 　・吸収（Absorb）
+    | 　・PERSONAの生成・配布
+    | 　・ユーザーのPERSONA利用
+    | コンテンツ開発概要
+    | 　・PERSONAの導入へのリンクを追加
+    | DrawChainの導入
+    | 　・DrawFollowerLimitterにブラックリスト設定の説明を追加
+    | 　・インターフェース情報を環境情報に移動
+    | 　・PERSONA owner毎のdraw数（履歴数）を返すfunctionを追加
+    | 　・同一PERSONAによるdraw()可能回数を制限するコントラクトの説明を追加
+    | 　・delivered()関数の補足を追加
+    | 署名生成手順
+    | 　・PERSONA配布時に使用する署名データの作成を追加
+    | 本番環境情報
+    | 　・以下のコントラクトアドレスを更新
+    | 　　MatrixMaster
+    | 　・以下のコントラクトアドレスを追加
+    | 　　EggSupplement
+    | 　　SquareSupplement
+    | 　　ContentsScopeApprover
+    | 　　AbsorbAuthority
+    | 　　DrawAbilityLimitter
+    | 　　DrawPersonaCategoryLimitter
+    | 　　DrawQuantityLimitter
+    | 　　DrawFollowerLimitter
+    | 　　AbsorbIntervalApprover
+    | 　・以下のabiを追加
+    | 　　EggSupplement
+    | 　　SquareSupplement
+    | 　　ContentsScopeApprover
+    | 　　AbsorbAuthority
+    | 　　DrawAbilityLimitter
+    | 　　DrawPersonaCategoryLimitter
+    | 　　DrawQuantityLimitter
+    | 　　DrawFollowerLimitter
+    | 　・以下のインターフェースを追加
+    | 　　IDrawChainAuthorizer
+    | 　　IAbsorbApprover
+    | 　・ライブラリを署名ページから移動
+    | Ark.oneテストネット環境情報
+    | 　・以下のコントラクトアドレスを追加
+    | 　　EggSupplement
+    | 　　SquareSupplement
+    | 　　ContentsScopeApprover
+    | 　　AbsorbAuthority
+    | 　　AbsorbIntervalApprover
+    | 　・以下のabiを追加
+    | 　　EggSupplement
+    | 　　SquareSupplement
+    | 　　ContentsScopeApprover
+    | 　　AbsorbAuthority
+    | 　・以下のインターフェースを追加
+    | 　　IDrawChainAuthorizer
+    | 　　IAbsorbApprover
+    | 　・ライブラリを署名ページから移動
+    | ARCANAの属性値計算
+    | 　・Green Star 抽選確率を修正
+    | ANICANA API
+    | 　・ANICANA APIの参考情報ページを追加
+    | 　"
     "3.", "2023/06/23", "1.0.3", "| 本番環境情報
     | 　・以下のコントラクトアドレスを追加
     | 　　DrawChain

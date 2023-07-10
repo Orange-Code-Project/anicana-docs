@@ -1,2 +1,3 @@
-# buildディレクトリを無視する
+# build,keepディレクトリを無視する
 build
+keep

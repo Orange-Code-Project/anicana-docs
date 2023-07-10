@@ -1,0 +1,22 @@
+{
+  "genSigConfig": {
+    "chainId": 1337,
+    "nonceOffset": 0
+  },
+  "eggSigConfig": {
+    "name": "Egg",
+    "version": "1.0"
+  },
+  "arcanaSigConfig": {
+    "name": "Arcana",
+    "version": "1.0"
+  },
+  "incubatorSigConfig": {
+    "name": "Incubator",
+    "version": "1.0"
+  },
+  "personaSigConfig": {
+    "name": "Persona",
+    "version": "1.0"
+  }
+}
