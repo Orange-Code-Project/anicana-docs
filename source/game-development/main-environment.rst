@@ -177,7 +177,7 @@ IPFS
     :align: center
 
     項目, 説明
-    APIサーバーエンドポイント, "http://chainapi.octillion.jp/"
+    APIサーバーエンドポイント, "https://chainapi.octillion.jp/"
     Swagger UI, "https://chainapi.octillion.jp/docs#/"
-    IPFS gateway, "http://ipfs.octillion.jp/"
+    IPFS gateway, "https://ipfs.octillion.jp/"
 

@@ -21,7 +21,7 @@ Ark.oneテストネット環境一覧
 
     項目, 説明
     Chain ID, 222221
-    JSON-RPC, "https://stgchain.anicana.org/"
+    JSON-RPC, "https://stgchains.anicana.org/"
 
 -------------------------------------------------------------------
 

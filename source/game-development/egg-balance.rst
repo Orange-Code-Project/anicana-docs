@@ -16,7 +16,7 @@ EGG一覧取得例(js)::
         var Web3 = require('web3');
         var eggAbi = require("./egg.json");
 
-        const web3 = new Web3("https://stgchain.anicana.org/"); // JSON-RPCのurlを指定
+        const web3 = new Web3("https://stgchains.anicana.org/"); // JSON-RPCのurlを指定
 
         const eggAddr = "0xb374640Ca3E3DA6F836ca8c60130fCAE2da3B929"; // Eggコントラクトのアドレスを指定
         const holderAddr = "0xe092b1fa25DF5786D151246E492Eed3d15EA4dAA"; // EGGの保有状況を確認したい対象アドレス
