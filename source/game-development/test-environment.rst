@@ -39,7 +39,7 @@ Ark.oneテストネット環境一覧
     Decomposer,                 0x837B0315d7dCB5ffaAc91b2dC085528c1fF75CE0
     Egg,                        0x266Dc32CeabC06bC54469E8FAd9bE65efAfb66E8
     EggBuilder,                 0xEcA31401263042B2Ec98457D0Ae1CaB9064f948E
-    Incubator,                  0x2F690711703Bc81ce48d549e478282d7492d2895
+    Incubator,                  0x9C4EE916C997A469802A3F91ff729350A708C1cF
     MatrixMaster,               0x39BaC9943e4266096854029141867592E7958D3F
     Shard,                      0x4Ca7323b9fB0EEc64ff23De4dCC67f434626FcEd
     Square,                     0x8D3c73943b5ec3b64aeA43CD197F4214b0E70C38
