@@ -43,13 +43,15 @@
     SquareSupplement,           0xa576401d922Ec79c7B6b93637f1BAd1A72D20CfF
     ContentsScopeApprover,      0x1000c42284Fa3BFD2F37280Fe1b61ab56bC894AA
     AbsorbAuthority,            0x4033696a12Ce2f6fF7ADDfD1D9F80C31Ea55C12A
+    AbsorbIntervalApprover,     0x677c1cF5b1A41A0dCeb954beAA30F18228B2c521
     DrawChain,                  0x894aB05BF700BA567530EBB1C2e8E5319DdB4233
     Persona,                    0xCA6f428D07b00837C047bbeBe4a75F993C2288c1
     DrawAbilityLimitter,        0x13DaD62abfa9AA67f2AcFcDC48007c16205D36D6
     DrawPersonaCategoryLimitter,0x1373c316d6DFC796F8C85b29160694AA8D229291
     DrawQuantityLimitter,       0xFC645cfC6cF992726D82183FF9E19B1c7E811f10
     DrawFollowerLimitter,       0x4c5443f1A3A774c4ef2F1ea5915510ff3D17BC2f
-    AbsorbIntervalApprover,     0x677c1cF5b1A41A0dCeb954beAA30F18228B2c521
+    DrawCountLimitter,          0x6d8Eb682dF8AC49A418a92Cba35b053e24735237
+    DrawPersonaLimitter,        0xd05634254e70b4290368901831D753D6fB4f3eca
 
 -------------------------------------------------------------------
 
@@ -74,6 +76,8 @@
     DrawPersonaCategoryLimitter, :download:`DrawPersonaCategoryLimitter.json<../file_main/abi/DrawPersonaCategoryLimitter.json>`
     DrawQuantityLimitter,        :download:`DrawQuantityLimitter.json<../file_main/abi/DrawQuantityLimitter.json>`
     DrawFollowerLimitter,        :download:`DrawFollowerLimitter.json<../file_main/abi/DrawFollowerLimitter.json>`
+    DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_main/abi/DrawCountLimitter.json>`
+    DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_main/abi/DrawPersonaLimitter.json>`
 
 -------------------------------------------------------------------
 

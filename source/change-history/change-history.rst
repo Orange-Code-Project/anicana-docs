@@ -7,6 +7,11 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "7.", "2023/08/21", "1.1.3", "| 本番環境情報
+    | Ark.oneテストネット環境情報
+    | DrawChainの導入
+    | 　⇒DrawCountLimitter,DrawPersonaLimitterの情報を追加
+    | 　"
     "6.", "2023/08/15", "1.1.2", "| 本番環境情報
     | Ark.oneテストネット環境情報
     | 　⇒Incubatorのコントラクトアドレスを修正

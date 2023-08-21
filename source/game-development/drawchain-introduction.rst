@@ -324,3 +324,17 @@ draw()可能な呼び出し元をDrawChainに紐づくsquare key のフォロワ
 | DrawChain登録時のAuthorizerInfoにコントラクトを設定、presetIdにdraw可能回数を設定する。
 | 同一personaによってdrawされた回数が指定したdraw可能回数より小さい場合、draw可能となる。
 
+draw()可能なPERSONAを制限するコントラクト
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| (DrawPersonaLimitter.sol)
+| newPresetでdraw()可能にしたいPERSONAを指定。
+| DrawChain登録時のAuthorizerInfoにコントラクトを設定、presetIdに上記で設定時の返却値を設定する。
+| 指定されたPresetに対象のPERSONAが含まれている場合、draw可能となる。
+
+newPreset::
+
+        @param personas 登録したいPRRSONA IDの配列
+        @return numPresets 登録番号
+        function newPreset(uint256[] calldata personas) public returns(uint256)
+

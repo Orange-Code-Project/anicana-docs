@@ -48,13 +48,15 @@ Ark.oneテストネット環境一覧
     SquareSupplement,           0x45BbC4fABbA1883A94BE0ff4Ab02d19B778d86bd
     ContentsScopeApprover,      0x9617Ba1f8a08B75b3d9E6fF4dE3E1233440969AB
     AbsorbAuthority,            0x36fddE6a2cCF18553B18e8C6b1A5535ee3B9cED1
+    AbsorbIntervalApprover,     0x2D6296a287e4211c4b6c8232Baf0e3E084f6db7F
     DrawChain,                  0x4B4DB59Fc8612D697D418CF9A6C39634E08B6589
     Persona,                    0xD513eAd11bAfeE6b2bC08436a512FF3A8AC0265E
     DrawAbilityLimitter,        0x37Ef8Fa8995c43C26AC675C3A9DF317f3ed3A476
     DrawPersonaCategoryLimitter,0xb9AA5Df1637d0cB103BA2F2D799AE878F082BBDF
     DrawQuantityLimitter,       0xF8BD4c1EEd08c48D086EB3bDeAE9eF03B05488aF
     DrawFollowerLimitter,       0xE4FDF41364930Fc4E43332E35d0F86478a0fa7D3
-    AbsorbIntervalApprover,     0x2D6296a287e4211c4b6c8232Baf0e3E084f6db7F
+    DrawCountLimitter,          0xD1128FF78c7ba79B3f8E679387D6C0C53321482b
+    DrawPersonaLimitter,        0xFcd33F400399f7E46dca668A4Ec36652e035c276
 
 
 -------------------------------------------------------------------
@@ -80,6 +82,8 @@ Ark.oneテストネット環境一覧
     DrawPersonaCategoryLimitter, :download:`DrawPersonaCategoryLimitter.json<../file_ark1/abi/DrawPersonaCategoryLimitter.json>`
     DrawQuantityLimitter,        :download:`DrawQuantityLimitter.json<../file_ark1/abi/DrawQuantityLimitter.json>`
     DrawFollowerLimitter,        :download:`DrawFollowerLimitter.json<../file_ark1/abi/DrawFollowerLimitter.json>`
+    DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_ark1/abi/DrawCountLimitter.json>`
+    DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_ark1/abi/DrawPersonaLimitter.json>`
 
 
 -------------------------------------------------------------------
