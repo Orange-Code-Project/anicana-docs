@@ -9,6 +9,10 @@ version: 2
 formats:
   - pdf
 
+python:
+  install:
+    - requirements: requirements.txt
+
 # Set the OS, Python version and other tools you might need
 build:
   os: ubuntu-22.04
