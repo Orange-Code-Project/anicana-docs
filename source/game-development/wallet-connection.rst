@@ -22,12 +22,13 @@ API仕様
     :align: center
 
     パラメータ, required/optional, 型, 説明
-    id,             required, 文字列,  anikana_login_script (変更しないで下さい)
-    src,            required, URL,     {endpoint}/login.js（endpointは環境情報ページを参照）
-    data-call-id,   required, 数値,    パブリッシャー毎に一意の数値。コンテンツ側で、どの遷移からのユーザーが戻ってきたかなどを判別するための機能となっている。その情報が特に必要なければ9999999で問題ない。
-    data-sign-text, optional, 文字列,  署名対象のテキスト(ワンタイムトークン)
-    data-callback,  required, URL,     コールバックURL. ログイン完了後、callId、 sign、 address (ユーザーのwallet address) がGETパラメータに追加されてリダイレクトされる。
-    data-logout,    optional, boolean, trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
+    id,                 required, 文字列,  anikana_login_script (変更しないで下さい)
+    src,                required, URL,     {endpoint}/login.js（endpointは環境情報ページを参照）
+    data-call-id,       required, 数値,    パブリッシャー毎に一意の数値。コンテンツ側で、どの遷移からのユーザーが戻ってきたかなどを判別するための機能となっている。その情報が特に必要なければ9999999で問題ない。
+    data-sign-text,     optional, 文字列,  署名対象のテキスト(ワンタイムトークン)
+    data-callback,      required, URL,     コールバックURL. ログイン完了後、callId、 sign、 address (ユーザーのwallet address) がGETパラメータに追加されてリダイレクトされる。
+    data-logout,        optional, boolean, trueの場合、強制的に再ログインをさせる。falseの場合、セッション情報があれば自動ログイン、なければ再ログインをさせる。無しの場合、falseと同様。
+    data-referral-code, optional, 文字列,  affiliateから渡されるreferral codeをセットする。
 
 
 | ・data-sign-text
