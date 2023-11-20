@@ -84,6 +84,7 @@ Ark.oneテストネット環境一覧
     DrawFollowerLimitter,        :download:`DrawFollowerLimitter.json<../file_ark1/abi/DrawFollowerLimitter.json>`
     DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_ark1/abi/DrawCountLimitter.json>`
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_ark1/abi/DrawPersonaLimitter.json>`
+    Square,                      :download:`Square.json<../file_ark1/abi/Square.json>`
 
 
 -------------------------------------------------------------------

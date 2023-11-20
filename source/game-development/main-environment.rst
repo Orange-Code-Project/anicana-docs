@@ -78,6 +78,8 @@
     DrawFollowerLimitter,        :download:`DrawFollowerLimitter.json<../file_main/abi/DrawFollowerLimitter.json>`
     DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_main/abi/DrawCountLimitter.json>`
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_main/abi/DrawPersonaLimitter.json>`
+    Square,                      :download:`Square.json<../file_main/abi/Square.json>`
+
 
 -------------------------------------------------------------------
 
