@@ -29,6 +29,6 @@ ARCANA生成ページ(API)との連携フロー
 テストネット環境では以下の手順でARCANA生成を行うことができる。
 
 #. Validator管理画面にメールアドレスで登録しwalletを作成。
-#. 上記で発行されたwalletaddressのprivatekeyを取得。このprivatekeyを使用して署名の作成を行う。privatekeyは専用のサイトを使用して取得。
+#. 上記で発行されたwalletaddressのprivatekeyを取得。このprivatekeyを使用して署名の作成を行う。privatekeyはValidator管理画面に対象ユーザーでログインし、ブラウザの開発ツールのコンソールから確認できる。
 #. テストネット環境でのEGGは、Validator管理画面から生成するのではなく、テクニカルサポートチームが管理権限で発行を行う。
 

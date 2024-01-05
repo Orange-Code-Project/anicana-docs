@@ -20,7 +20,12 @@ ANICANA Technical Documents
    /overview/system-requirement
    /overview/consensus-algorithm
    /overview/how-to-join
-   
+
+.. toctree::
+   :maxdepth: 2
+   :caption: クイックスタート:
+
+   /quick-Start/quick-Start
 
 .. toctree::
    :maxdepth: 2
@@ -67,6 +72,7 @@ ANICANA Technical Documents
    /game-development/persona-user-use
    /game-development/arcanaGeneratorInfo
    /game-development/anicana-api
+   /game-development/affiliate
 
 .. toctree::
    :maxdepth: 2

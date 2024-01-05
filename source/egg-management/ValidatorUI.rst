@@ -23,6 +23,15 @@ Validator管理画面
     "EGGの生成", ":doc:`EGG生成する </egg-management/generate-eggs>` を参照。"
 
 
+Private Keyの取得
+============================================
+| ログインユーザーのPrivate Keyを確認することができる。
+| F12を押下しブラウザの開発ツールを表示する。コンソールに表示されているprivateKeyを確認。
+
+
+   .. figure:: ../img/ValidatorUI/ValidatorUI-10.png
+
+
 | その他画面の詳細について以下に示す。
 
 DASHBOARD

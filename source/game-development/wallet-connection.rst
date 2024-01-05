@@ -32,6 +32,18 @@ API仕様
     data-referral-code, optional, 文字列,  affiliateから渡されるreferral codeをセットする。英数字64文字固定。
 
 
+・直接URLを生成する場合のサンプル
+
+直接URLを生成::
+
+	{endpoint}/login/idms/{:call-id}/{sign-text}?r={callback}&logout={logout}
+
+
+直接URLを生成( referral-codeあり）::
+	
+	{endpoint}/login/idms/{:call-id}/{sign-text}?r={callback}&logout={logout}&referral_code=XXXXX
+
+
 | ・data-sign-text
 | 高度なセキュリティを実装したい場合に設定が可能。
 | 詳細は `こちら <../appendics/data-sign-text.html>`_ を参照。
