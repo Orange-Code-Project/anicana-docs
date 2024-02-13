@@ -93,6 +93,7 @@ ANICANA Technical Documents
    /contract-info/calculate-genes
    /contract-info/decomposition
    /contract-info/attributes
+   /contract-info/bloodline
 
 .. toctree::
    :maxdepth: 2
