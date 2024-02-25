@@ -57,6 +57,7 @@ Ark.oneテストネット環境一覧
     DrawFollowerLimitter,       0xE4FDF41364930Fc4E43332E35d0F86478a0fa7D3
     DrawCountLimitter,          0xD1128FF78c7ba79B3f8E679387D6C0C53321482b
     DrawPersonaLimitter,        0xFcd33F400399f7E46dca668A4Ec36652e035c276
+    Boloodline,                 0xF062Fa680057396a9c6a336139E531E0FFaBfAd6
 
 
 -------------------------------------------------------------------
@@ -85,6 +86,7 @@ Ark.oneテストネット環境一覧
     DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_ark1/abi/DrawCountLimitter.json>`
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_ark1/abi/DrawPersonaLimitter.json>`
     Square,                      :download:`Square.json<../file_ark1/abi/Square.json>`
+    Boloodline,                  :download:`Bloodline.json<../file_ark1/abi/Bloodline.json>`
 
 
 -------------------------------------------------------------------
