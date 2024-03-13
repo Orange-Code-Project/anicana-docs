@@ -98,6 +98,7 @@ ANICANA Technical Documents
    /egg-management/IPFS-upload
    /egg-management/anima
    /egg-management/ValidatorUI
+   /egg-management/LEVICA-MerchantManagement
 
 .. toctree::
    :maxdepth: 2
