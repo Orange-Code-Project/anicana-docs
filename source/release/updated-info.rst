@@ -10,9 +10,9 @@
 
     "No", "更新日", "内容"
     "1.", "", ":doc:`LEVICA-app（メインネット） </release/levica-app-main>` "
-    "2.", "2024/03/13", ":doc:`LEVICA-app（Ark.one） </release/levica-app-test>` "
+    "2.", "", ":doc:`LEVICA-app（Ark.one） </release/levica-app-test>` "
     "3.", "", ":doc:`LEVICA-backend（メインネット） </release/levica-backend-main>` "
-    "4.", "", ":doc:`LEVICA-backend（Ark.one） </release/levica-backend-test>` "
+    "4.", "2024/03/13", ":doc:`LEVICA-backend（Ark.one） </release/levica-backend-test>` "
     "5.", "", ":doc:`Arcana Generator（メインネット） </release/arcana-generator-main>` "
     "6.", "", ":doc:`Arcana Generator（Ark.one） </release/arcana-generator-test>` "
     "7.", "", ":doc:`LEVIAS ID（メインネット） </release/levias-id-main>` "
