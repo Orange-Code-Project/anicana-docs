@@ -179,7 +179,6 @@ LEVICA
     :align: center
 
     "環境", "APIエンドポイント（base_url）、URL"
-    "開発", "http://levicapachinko-dev-apialb-1787872278.ap-northeast-1.elb.amazonaws.com"
     "ステージング", "http://levica-stg-apialb-1782828167.ap-northeast-1.elb.amazonaws.com"
     "加盟店管理画面", "http://stg.store.levica.io/login"
 

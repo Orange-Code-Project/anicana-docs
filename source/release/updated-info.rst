@@ -11,7 +11,7 @@
     "No", "更新日", "内容"
     "1.", "", ":doc:`LEVICAアプリ（メインネット） </release/levica-app-main>` "
     "2.", "", ":doc:`LEVICAアプリ（Ark.one） </release/levica-app-test>` "
-    "3.", "2024/03/16", ":doc:`LEVICA API（メインネット） </release/levica-backend-main>` "
+    "3.", "2024/03/28", ":doc:`LEVICA API（メインネット） </release/levica-backend-main>` "
     "4.", "2024/03/13", ":doc:`LEVICA API（Ark.one） </release/levica-backend-test>` "
     "5.", "", ":doc:`ARCANA生成API（メインネット） </release/arcana-generator-main>` "
     "6.", "", ":doc:`ARCANA生成API（Ark.one） </release/arcana-generator-test>` "
