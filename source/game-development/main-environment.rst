@@ -52,6 +52,7 @@
     DrawFollowerLimitter,       0x4c5443f1A3A774c4ef2F1ea5915510ff3D17BC2f
     DrawCountLimitter,          0x6d8Eb682dF8AC49A418a92Cba35b053e24735237
     DrawPersonaLimitter,        0xd05634254e70b4290368901831D753D6fB4f3eca
+    Boloodline,                 0x59436fc484aC84c9301e993F12B128df27B19276
 
 
 -------------------------------------------------------------------
@@ -80,6 +81,7 @@
     DrawCountLimitter,           :download:`DrawCountLimitter.json<../file_main/abi/DrawCountLimitter.json>`
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_main/abi/DrawPersonaLimitter.json>`
     Square,                      :download:`Square.json<../file_main/abi/Square.json>`
+    Boloodline,                  :download:`Bloodline.json<../file_main/abi/Bloodline.json>`
 
 
 -------------------------------------------------------------------
