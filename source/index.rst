@@ -109,6 +109,8 @@ ANICANA Technical Documents
    /contract-info/decomposition
    /contract-info/attributes
    /contract-info/bloodline
+   /contract-info/tenebraeOverview
+   /contract-info/tenebraeImplementation
 
 .. toctree::
    :maxdepth: 2
