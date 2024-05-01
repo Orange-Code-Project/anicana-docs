@@ -7,6 +7,12 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "26.", "2024/05/01", "1.5.1", "| LEVICA API（メインネット）
+    | LEVICA API（Ark.one）
+    | LEVIAS ID（メインネット）
+    | LEVIAS ID（Ark.one）
+    | 　⇒リリース内容の更新
+    | 　"
     "25.", "2024/04/26", "1.5.0", "| tenebrae概要
     | tenebrae実装
     | 　⇒ページを作成

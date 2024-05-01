@@ -10,4 +10,6 @@ LEVIAS ID（Ark.one）
     :align: center
 
     "No", "バージョン", "リリース日", "リリースノート"
+    "2.", "2.0.0", "2024/05/01", "| levias idのログインページの変更
+    | https://leviasid.anicana.org/login/idms"
     "1.", "1.3.10", "", "2024/03/15時点　最新バージョン"
