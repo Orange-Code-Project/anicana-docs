@@ -7,6 +7,10 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "27.", "2024/06/26", "1.5.2", "| LEVICA API（メインネット）
+    | LEVICA API（Ark.one）
+    | 　⇒リリース内容の更新
+    | 　"
     "26.", "2024/05/01", "1.5.1", "| LEVICA API（メインネット）
     | LEVICA API（Ark.one）
     | LEVIAS ID（メインネット）
