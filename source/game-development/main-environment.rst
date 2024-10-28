@@ -97,6 +97,7 @@
     IF, ダウンロード
     IDrawChainAuthorizer, :download:`IDrawChainAuthorizer.sol<../file_main/if/IDrawChainAuthorizer.sol>`
     IAbsorbApprover,      :download:`IAbsorbApprover.sol<../file_main/if/IAbsorbApprover.sol>`
+	IDrawChainPostProcessor, :download:`IDrawChainPostProcessor.sol<../file_main/if/IDrawChainPostProcessor.sol>`
 
 -------------------------------------------------------------------
 

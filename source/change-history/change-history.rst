@@ -7,6 +7,12 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "28.", "2024/10/28", "1.5.3", "| Ark.one環境情報
+    | メインネット環境情報
+    | 　⇒IDrawChainPostProcessor.solを追加
+    | DrawChainの導入
+    | 　⇒概要図の更新。PostProcessorの説明を追加。
+    | 　"
     "27.", "2024/06/26", "1.5.2", "| LEVICA API（メインネット）
     | LEVICA API（Ark.one）
     | 　⇒リリース内容の更新

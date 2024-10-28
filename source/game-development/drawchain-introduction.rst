@@ -13,6 +13,7 @@ Drawchainの設定
 ============================================
 | DrawChainを実行する際の条件を設定できる。
 | IDrawChainAuthorizerインターフェースを継承したコントラクトを登録することで設定が可能。
+| またIDrawChainPostProcessorインターフェースを継承したコントラクトを登録することで、Draw後の動作が設定が可能。
 
 ■パブリッシャー向けfunction
 
@@ -63,6 +64,44 @@ DrawChainのアクティブ、非アクティブの設定を行うfunction(Drawc
         @param drawChainId DrawChain ID
         @param active true: draw可能、false: draw不可能
         function deactivateDrawChain(uint256 drawChainId,bool active) public;
+
+
+③DrawChain実行後の動作を設定するcontractを作成
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+IDrawChainPostProcessorインターフェースを実装したコントラクトを作成(IDrawChainPostProcessor.sol)::
+
+        @notice Draw成功後の後処理を行う。
+        @param drawChainId DrawChain ID
+        @param personaId Persona ID
+        @param personaOwner Draw成功時のPersonaのOwner
+        @param processorData DrawChain.attach()時に指定するコントラクト特有のデータ
+        @return true: 景品の配布が完了した（配布日時を記録する）、false: 景品の配布は行っていない
+        function process(uint256 drawChainId,uint256 personaId,address personaOwner,uint256 processorData) external returns(bool);
+
+| インターフェースファイルは環境情報を参照。
+| なお、Draw後の動作が設定不要な場合、③④は実施不要。
+
+
+④DrawChainPostProcessorを登録・解除する。
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| 上記で作成したコントラクトを作成したDrawChainに設定する。
+| 設定先のDrawChainのID、設定するDrawChainPostProcessorのコントラクトアドレスを設定する。
+| dataの使用方法は実装コントラクト内で自由に定義することができる。
+
+DrawChainPostProcessorを登録するfunction(Drawchain.sol)::
+
+        @param drawChainId DrawChain ID
+        @param _addr PostProcessorのアドレス
+        @param data 
+        function attachPostProcessor(uint256 drawChainId,address _addr,uint256 data)
+
+DrawChainPostProcessorを解除するfunction(Drawchain.sol)::
+
+        @param drawChainId DrawChain ID
+        @param _addr PostProcessorのアドレス
+        @param data 
+        function detachPostProcessor(uint256 drawChainId,address _addr,uint256 data)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -201,6 +240,15 @@ PERSONA owner毎のdraw履歴を返す（batch version)(Drawchain.sol)
         @return draw履歴配列
         function drawHistoryByPersonaOwner (address personaOwner,uint256 fromIdx,uint256 count) public view returns(History[] memory)
 
+DrawChain毎に設定されたPostProcessorの情報を返す(Drawchain.sol)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+        @param drawChainId DrawChain ID
+        @return PostProcessorInfo
+        function listPostProcessor(uint256 drawChainId) public view override returns(PostProcessorInfo[] memory)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 Drawchainの実行
@@ -337,4 +385,19 @@ newPreset::
         @param personas 登録したいPRRSONA IDの配列
         @return numPresets 登録番号
         function newPreset(uint256[] calldata personas) public returns(uint256)
+
+
+実装済み IDrawChainPostProcessor
+============================================
+
+| 現在利用可能なIDrawChainPostProcessorインターフェースを実装したコントラクトは以下となる。
+| 有効にするには、DrawChainにattachする必要がある。
+
+draw後に指定のPERSONAを、指定のアドレスに転送するコントラクト
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| (PersonaCollector.sol)
+| attach時のdataに転送先のアドレスを設定する。
+| draw時の引数のpersonaIdを上記で指定したアドレスに転送する。
+| draw実行前にDrawChainコントラクトに、PERSONAをapproveする必要がある。
 
