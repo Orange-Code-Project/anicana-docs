@@ -58,7 +58,7 @@ Ark.one環境一覧
     DrawCountLimitter,          0xD1128FF78c7ba79B3f8E679387D6C0C53321482b
     DrawPersonaLimitter,        0xFcd33F400399f7E46dca668A4Ec36652e035c276
     Boloodline,                 0xF062Fa680057396a9c6a336139E531E0FFaBfAd6
-
+    PersonaCollector,           0xA3f6a30760A5AFc28b2D44f16e7129BF4E2F13cc
 
 -------------------------------------------------------------------
 
@@ -74,11 +74,11 @@ Ark.one環境一覧
     Egg,                         :download:`Egg.json<../file_ark1/abi/Egg.json>`
     ArcanaGeneratorInfo,         :download:`ArcanaGeneratorInfo.json<../file_ark1/abi/ArcanaGeneratorInfo.json>`
     EggSupplement,               :download:`EggSupplement.json<../file_ark1/abi/EggSupplement.json>`
-    SquareSupplement,            :download:`SquareSupplement.json<../file_ark1/abi/SquareSupplement.json>`
+    SquareSupplement,            :download:`SquareSupplement.json<../file_ark1/abi/SquareSupplementV2.json>`
     ContentsScopeApprover,       :download:`ContentsScopeApprover.json<../file_ark1/abi/ContentsScopeApprover.json>`
     AbsorbAuthority,             :download:`AbsorbAuthority.json<../file_ark1/abi/AbsorbAuthority.json>`
-    DrawChain,                   :download:`DrawChain.json<../file_ark1/abi/DrawChainV1.json>`
-    Persona,                     :download:`Persona.json<../file_ark1/abi/Persona.json>`
+    DrawChain,                   :download:`DrawChain.json<../file_ark1/abi/DrawChainV2.json>`
+    Persona,                     :download:`Persona.json<../file_ark1/abi/PersonaV3.json>`
     DrawAbilityLimitter,         :download:`DrawAbilityLimitter.json<../file_ark1/abi/DrawAbilityLimitter.json>`
     DrawPersonaCategoryLimitter, :download:`DrawPersonaCategoryLimitter.json<../file_ark1/abi/DrawPersonaCategoryLimitter.json>`
     DrawQuantityLimitter,        :download:`DrawQuantityLimitter.json<../file_ark1/abi/DrawQuantityLimitter.json>`

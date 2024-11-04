@@ -7,6 +7,9 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "29.", "2024/11/04", "1.5.4", "| Ark.one環境情報
+    | 　⇒DrawChainのabiを更新、PersonaCollectorのアドレスを追加
+    | 　"
     "28.", "2024/10/28", "1.5.3", "| Ark.one環境情報
     | メインネット環境情報
     | 　⇒IDrawChainPostProcessor.solを追加
