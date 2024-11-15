@@ -386,6 +386,34 @@ newPreset::
         @return numPresets 登録番号
         function newPreset(uint256[] calldata personas) public returns(uint256)
 
+draw()可能なPersona IDの範囲を制限するコントラクト
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| (DrawPersonaIdRangeLimitter.sol)
+| newPresetで新しいプリセットを作成する。
+| addRangeToPresetで指定したプリセットに新しい範囲を追加する。
+| resetPresetで指定したプリセットを削除する。
+| 指定されたPresetに対象のPERSONAが含まれている場合、draw可能となる。
+
+newPreset::
+
+        @notice 新しいプリセットを作成し、そのIDを返します
+        @return 作成された新しいプリセットのID
+        function newPreset() public returns (uint256)
+
+addRangeToPreset::
+
+        @notice 指定したプリセットに新しい範囲を追加します
+        @param id 範囲を追加するプリセットID
+        @param min 範囲の最小Persona ID
+        @param max 範囲の最大Persona ID
+        function addRangeToPreset(uint256 id, uint256 min, uint256 max) public 
+
+resetPreset::
+
+        @notice 指定したプリセットIDに関連付けられた範囲をリセットします
+        @param id リセットするプリセットID
+        function resetPreset(uint256 id) public
 
 実装済み IDrawChainPostProcessor
 ============================================

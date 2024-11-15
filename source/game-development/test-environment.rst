@@ -59,6 +59,7 @@ Ark.one環境一覧
     DrawPersonaLimitter,        0xFcd33F400399f7E46dca668A4Ec36652e035c276
     Boloodline,                 0xF062Fa680057396a9c6a336139E531E0FFaBfAd6
     PersonaCollector,           0xA3f6a30760A5AFc28b2D44f16e7129BF4E2F13cc
+    DrawPersonaIdRangeLimitter, 0xD3c1fe375eBc547bCad306814A3cb0B2278908EB
 
 -------------------------------------------------------------------
 
@@ -87,6 +88,7 @@ Ark.one環境一覧
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_ark1/abi/DrawPersonaLimitter.json>`
     Square,                      :download:`Square.json<../file_ark1/abi/Square.json>`
     Boloodline,                  :download:`Bloodline.json<../file_ark1/abi/Bloodline.json>`
+    DrawPersonaIdRangeLimitter,  :download:`DrawPersonaIdRangeLimitter.json<../file_ark1/abi/DrawPersonaIdRangeLimitter.json>`
 
 
 -------------------------------------------------------------------
