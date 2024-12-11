@@ -88,6 +88,7 @@ Ark.one環境一覧
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_ark1/abi/DrawPersonaLimitter.json>`
     Square,                      :download:`Square.json<../file_ark1/abi/Square.json>`
     Boloodline,                  :download:`Bloodline.json<../file_ark1/abi/Bloodline.json>`
+    PersonaCollector,            :download:`PersonaCollector.json<../file_ark1/abi/PersonaCollector.json>`
     DrawPersonaIdRangeLimitter,  :download:`DrawPersonaIdRangeLimitter.json<../file_ark1/abi/DrawPersonaIdRangeLimitter.json>`
 
 

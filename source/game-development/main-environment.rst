@@ -53,6 +53,7 @@
     DrawCountLimitter,          0x6d8Eb682dF8AC49A418a92Cba35b053e24735237
     DrawPersonaLimitter,        0xd05634254e70b4290368901831D753D6fB4f3eca
     Boloodline,                 0x59436fc484aC84c9301e993F12B128df27B19276
+    PersonaCollector,           0xE7A2e690388F675BF078fb4C7c9C8ebfd61826aD
     DrawPersonaIdRangeLimitter, 0xC401aa19855CBd7280c3b6F3bf4c78A8b3e0f50E
 
 -------------------------------------------------------------------
@@ -82,6 +83,7 @@
     DrawPersonaLimitter,         :download:`DrawPersonaLimitter.json<../file_main/abi/DrawPersonaLimitter.json>`
     Square,                      :download:`Square.json<../file_main/abi/Square.json>`
     Boloodline,                  :download:`Bloodline.json<../file_main/abi/Bloodline.json>`
+    PersonaCollector,            :download:`PersonaCollector.json<../file_main/abi/PersonaCollector.json>`
     DrawPersonaIdRangeLimitter,  :download:`DrawPersonaIdRangeLimitter.json<../file_main/abi/DrawPersonaIdRangeLimitter.json>`
 
 -------------------------------------------------------------------

@@ -7,7 +7,10 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
-    "30.", "2024/12/15", "1.5.5", "| Ark.one環境情報
+    "31.", "2024/12/11", "1.5.6", "| メインネット環境情報
+    | 　⇒PersonaCollectorのアドレス、abiを追加
+    | 　"
+    "30.", "2024/11/15", "1.5.5", "| Ark.one環境情報
     | メインネット環境情報
     | 　⇒DrawPersonaIdRangeLimitterのアドレス、abiを追加
     | DrawChainの導入
