@@ -212,3 +212,20 @@ NFTの転送(Persona.sol)
          @param tokenId PERSONA ID
          function transferFrom(address from,address to,uint256 tokenId) public validToken(tokenId)
 
+balance取得(Persona.sol)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
+
+         @param ownerAddress 対象のaddress
+         @return 対象のaddressの保有Persona数
+         function balanceOf(address ownerAddress);
+
+保有IDリスト取得(Persona.sol)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
+
+         @param ownerAddress 対象のaddress
+         @param index 開始index
+         @param limit 最大取得数
+         @return 保有IDリスト
+         function tokenOfOwnerByIndexBatch(address ownerAddress, uint256 index, uint256 limit);
