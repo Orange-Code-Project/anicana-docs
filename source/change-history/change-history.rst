@@ -7,6 +7,11 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "33.", "2025/05/07", "1.6.0", "| ARCANA-Auction
+    | 　Automated Bidder Service
+    | 　system_vendor_budget_manager
+    | 　⇒新規ページ作成
+    | 　"
     "32.", "2025/04/22", "1.5.7", "| メインネット環境情報、Ark.one環境情報
     | 　⇒各種アドレス、abi情報を整理
     | 　"

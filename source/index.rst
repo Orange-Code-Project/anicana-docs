@@ -87,6 +87,9 @@ ANICANA Technical Documents
    /game-development/arcanaGeneratorInfo
    /game-development/anicana-api
    /game-development/affiliate
+   /game-development/arcana-auction
+   /game-development/arcana-auction_system_vendor
+   /game-development/arcana-auction_automated_bidder
 
 .. toctree::
    :maxdepth: 2
