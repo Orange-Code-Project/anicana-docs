@@ -7,6 +7,7 @@
     :align: center
 
     "No", "更新日", "バージョン", "変更内容"
+    "34.", "2026/10/28", "1.6.1", "LEVICA決済：ステージング環境の決済サービスをGMOペイメントゲートウェイに変更し、テストカード番号を更新"
     "33.", "2025/05/07", "1.6.0", "| ARCANA-Auction
     | 　Automated Bidder Service
     | 　system_vendor_budget_manager
